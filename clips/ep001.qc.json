@@ -1,0 +1,106 @@
+{
+  "duration": 33.59,
+  "lufs": -15.5,
+  "shots": 19,
+  "avg_shot": 1.77,
+  "ok_duration": true,
+  "ok_loudness": true,
+  "footage": [
+    {
+      "shot": "L0S0",
+      "source": "pixabay",
+      "page": "https://pixabay.com/videos/id-135138/"
+    },
+    {
+      "shot": "L0S1",
+      "source": "pixabay",
+      "page": "https://pixabay.com/videos/id-185560/"
+    },
+    {
+      "shot": "L0S2",
+      "source": "pixabay",
+      "page": "https://pixabay.com/videos/id-85004/"
+    },
+    {
+      "shot": "L1S0",
+      "source": "pixabay",
+      "page": "https://pixabay.com/videos/id-200882/"
+    },
+    {
+      "shot": "L1S1",
+      "source": "pixabay",
+      "page": "https://pixabay.com/videos/id-67927/"
+    },
+    {
+      "shot": "L1S2",
+      "source": "pixabay",
+      "page": "https://pixabay.com/videos/id-335351/"
+    },
+    {
+      "shot": "L2S0",
+      "source": "pixabay",
+      "page": "https://pixabay.com/videos/id-206173/"
+    },
+    {
+      "shot": "L2S1",
+      "source": "pixabay",
+      "page": "https://pixabay.com/videos/id-14508/"
+    },
+    {
+      "shot": "L2S2",
+      "source": "pixabay",
+      "page": "https://pixabay.com/videos/id-380493/"
+    },
+    {
+      "shot": "L3S0",
+      "source": "pixabay",
+      "page": "https://pixabay.com/videos/id-57693/"
+    },
+    {
+      "shot": "L3S1",
+      "source": "pixabay",
+      "page": "https://pixabay.com/videos/id-84709/"
+    },
+    {
+      "shot": "L3S2",
+      "source": "pixabay",
+      "page": "https://pixabay.com/videos/id-293082/"
+    },
+    {
+      "shot": "L4S0",
+      "source": "pixabay",
+      "page": "https://pixabay.com/videos/id-66481/"
+    },
+    {
+      "shot": "L4S1",
+      "source": "pixabay",
+      "page": "https://pixabay.com/videos/id-151295/"
+    },
+    {
+      "shot": "L4S2",
+      "source": "pixabay",
+      "page": "https://pixabay.com/videos/id-7818/"
+    },
+    {
+      "shot": "L5S0",
+      "source": "pixabay",
+      "page": "https://pixabay.com/videos/id-126662/"
+    },
+    {
+      "shot": "L5S1",
+      "source": "pixabay",
+      "page": "https://pixabay.com/videos/id-151297/"
+    },
+    {
+      "shot": "L5S2",
+      "source": "pixabay",
+      "page": "https://pixabay.com/videos/id-106040/"
+    },
+    {
+      "shot": "L6S0",
+      "source": "pixabay",
+      "page": "https://pixabay.com/videos/id-120483/"
+    }
+  ],
+  "music": "Night_Vigil.mp3"
+}
