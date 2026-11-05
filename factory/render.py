@@ -44,9 +44,12 @@ def build_timeline(plan, words):
 def choose(plan, picks, shots):
     used = set()
     for s in shots:
-        items = plan["candidates"].get(s["id"], {}).get("items", [])
         pick = picks.get(s["id"], 0)
-        idx, ss = (pick, None) if isinstance(pick, int) else (pick.get("i", 0), pick.get("ss"))
+        if isinstance(pick, int):
+            pick = {"i": pick}
+        # "from" lets a reviewer borrow a better candidate found under another shot's search
+        items = plan["candidates"].get(pick.get("from", s["id"]), {}).get("items", [])
+        idx, ss = pick.get("i", 0), pick.get("ss")
         order = [idx] + [i for i in range(len(items)) if i != idx]
         chosen = next((items[i] for i in order if i < len(items)
                        and (items[i]["source"], items[i]["id"]) not in used), None)
