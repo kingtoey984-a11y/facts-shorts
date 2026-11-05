@@ -1,0 +1,63 @@
+name: produce
+on:
+  workflow_dispatch:
+    inputs:
+      episode: {description: "episode id (e.g. ep001)", required: true}
+      stage: {description: "fetch | render | all", required: true, default: all}
+  push:
+    paths: ["jobs/next.json"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: produce
+  cancel-in-progress: false
+
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core > /dev/null
+          pip install -q pillow
+          mkdir -p assets/fonts
+          [ -f assets/fonts/Anton-Regular.ttf ] || curl -sSL -o assets/fonts/Anton-Regular.ttf \
+            https://github.com/google/fonts/raw/main/ofl/anton/Anton-Regular.ttf
+          ffmpeg -version | head -1
+
+      - name: Read job
+        id: job
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "episode=${{ inputs.episode }}" >> $GITHUB_OUTPUT
+            echo "stage=${{ inputs.stage }}" >> $GITHUB_OUTPUT
+          else
+            python3 -c "import json;j=json.load(open('jobs/next.json'));print('episode='+j['episode']);print('stage='+j.get('stage','all'))" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Fetch (voice + footage candidates)
+        if: steps.job.outputs.stage == 'fetch' || steps.job.outputs.stage == 'all'
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: cd factory && python3 fetch.py ${{ steps.job.outputs.episode }}
+
+      - name: Render
+        if: steps.job.outputs.stage == 'render' || steps.job.outputs.stage == 'all'
+        run: cd factory && python3 render.py ${{ steps.job.outputs.episode }}
+
+      - name: Save results
+        if: always()
+        run: |
+          git config user.name "facts-shorts-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A work clips assets/sfx assets/fonts 2>/dev/null || true
+          if git diff --cached --quiet; then echo "nothing to save"; exit 0; fi
+          git commit -q -m "${{ steps.job.outputs.stage }} ${{ steps.job.outputs.episode }} [bot]"
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
