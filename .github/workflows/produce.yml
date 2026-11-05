@@ -51,6 +51,12 @@ jobs:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: cd factory && python3 fetch.py ${{ steps.job.outputs.episode }}
 
+      - name: Voice samples
+        if: steps.job.outputs.stage == 'voices'
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: cd factory && python3 voice_samples.py
+
       - name: Render
         if: steps.job.outputs.stage == 'render' || steps.job.outputs.stage == 'all'
         run: cd factory && python3 render.py ${{ steps.job.outputs.episode }}
@@ -60,7 +66,7 @@ jobs:
         run: |
           git config user.name "facts-shorts-bot"
           git config user.email "actions@users.noreply.github.com"
-          for d in work clips assets/sfx assets/fonts assets/music; do [ -e "$d" ] && git add -A "$d"; done
+          for d in work clips samples assets/sfx assets/fonts assets/music; do [ -e "$d" ] && git add -A "$d"; done
           if git diff --cached --quiet; then echo "nothing to save"; exit 0; fi
           git commit -q -m "${{ steps.job.outputs.stage }} ${{ steps.job.outputs.episode }} [bot]"
           for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
