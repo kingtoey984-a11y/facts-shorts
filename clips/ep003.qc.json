@@ -1,0 +1,56 @@
+{
+  "duration": 30.0,
+  "lufs": -11.1,
+  "shots": 12,
+  "music": "Volatile_Reaction.mp3",
+  "footage": [
+    {
+      "shot": "L0S0",
+      "page": "https://pixabay.com/videos/id-28067/"
+    },
+    {
+      "shot": "L0S1",
+      "page": "https://pixabay.com/videos/id-16160/"
+    },
+    {
+      "shot": "L1S0",
+      "page": "https://pixabay.com/videos/id-299817/"
+    },
+    {
+      "shot": "L1S1",
+      "page": "https://pixabay.com/videos/id-363642/"
+    },
+    {
+      "shot": "L2S0",
+      "page": "https://pixabay.com/videos/id-44187/"
+    },
+    {
+      "shot": "L2S1",
+      "page": "https://pixabay.com/videos/id-187105/"
+    },
+    {
+      "shot": "L3S0",
+      "page": "https://pixabay.com/videos/id-22070/"
+    },
+    {
+      "shot": "L3S1",
+      "page": "https://pixabay.com/videos/id-7619/"
+    },
+    {
+      "shot": "L4S0",
+      "page": "https://pixabay.com/videos/id-130156/"
+    },
+    {
+      "shot": "L4S1",
+      "page": "https://pixabay.com/videos/id-382760/"
+    },
+    {
+      "shot": "L5S0",
+      "page": "https://pixabay.com/videos/id-369428/"
+    },
+    {
+      "shot": "L5S1",
+      "page": "https://pixabay.com/videos/id-152085/"
+    }
+  ]
+}
