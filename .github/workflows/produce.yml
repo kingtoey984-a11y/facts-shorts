@@ -24,8 +24,9 @@ jobs:
       - name: Tools
         timeout-minutes: 6
         run: |
-          if ! command -v ffmpeg >/dev/null; then
-            for i in 1 2 3; do sudo timeout 150 apt-get update -qq && sudo timeout 150 apt-get install -y -qq ffmpeg fonts-dejavu-core > /dev/null && break; sleep 5; done
+          dpkg -s fonts-noto-color-emoji >/dev/null 2>&1 || NEED=1
+          if ! command -v ffmpeg >/dev/null || [ -n "$NEED" ]; then
+            for i in 1 2 3; do sudo timeout 150 apt-get update -qq && sudo timeout 150 apt-get install -y -qq ffmpeg fonts-dejavu-core fonts-noto-color-emoji > /dev/null && break; sleep 5; done
           fi
           pip install -q pillow
           mkdir -p assets/fonts
@@ -44,7 +45,7 @@ jobs:
           fi
 
       - name: Fetch (voice + footage candidates)
-        if: contains(steps.job.outputs.stage, 'fetch') || steps.job.outputs.stage == 'all'
+        if: (contains(steps.job.outputs.stage, 'fetch') && !startsWith(steps.job.outputs.stage, 'montage')) || steps.job.outputs.stage == 'all'
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
@@ -64,11 +65,24 @@ jobs:
         run: cd factory && python3 fetch.py ${{ steps.job.outputs.episode }} --voice-only
 
       - name: Preview
-        if: contains(steps.job.outputs.stage, 'preview')
+        if: contains(steps.job.outputs.stage, 'preview') && !startsWith(steps.job.outputs.stage, 'montage')
         run: cd factory && python3 render.py ${{ steps.job.outputs.episode }} --preview
 
+      - name: Montage
+        if: startsWith(steps.job.outputs.stage, 'montage')
+        env:
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: |
+          cd factory
+          case "${{ steps.job.outputs.stage }}" in
+            montage-fetch) python3 montage.py ${{ steps.job.outputs.episode }} --fetch ;;
+            montage-preview) python3 montage.py ${{ steps.job.outputs.episode }} --preview ;;
+            montage-render) python3 montage.py ${{ steps.job.outputs.episode }} ;;
+          esac
+
       - name: Render
-        if: contains(steps.job.outputs.stage, 'render') || steps.job.outputs.stage == 'all'
+        if: (contains(steps.job.outputs.stage, 'render') && !startsWith(steps.job.outputs.stage, 'montage')) || steps.job.outputs.stage == 'all'
         run: cd factory && python3 render.py ${{ steps.job.outputs.episode }}
 
       - name: Save results

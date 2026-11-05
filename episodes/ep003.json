@@ -1,0 +1,69 @@
+{
+  "id": "ep003",
+  "format": "ranking_montage",
+  "channel": "Unseen Files",
+  "title": "Ranking Nature's SCARIEST Moments 😨 (#1 is insane)",
+  "description": "Nature doesn't play fair... Which one would you survive? 👇",
+  "hashtags": [
+    "#shorts",
+    "#nature",
+    "#ranking",
+    "#scary",
+    "#storm",
+    "#volcano"
+  ],
+  "board_title": [
+    "RANKING NATURE'S",
+    "SCARIEST MOMENTS"
+  ],
+  "lufs": -9,
+  "music": [
+    "Volatile Reaction",
+    "Five Armies"
+  ],
+  "music_track": "Volatile_Reaction.mp3",
+  "items": [
+    {
+      "label": "too close ⚡",
+      "shots": [
+        "lightning strike",
+        "lightning storm night"
+      ]
+    },
+    {
+      "label": "rogue wave 🌊",
+      "shots": [
+        "huge waves storm",
+        "big wave crash"
+      ]
+    },
+    {
+      "label": "firestorm 🔥",
+      "shots": [
+        "wildfire",
+        "forest fire night"
+      ]
+    },
+    {
+      "label": "tornado 🌪️",
+      "shots": [
+        "tornado",
+        "supercell storm"
+      ]
+    },
+    {
+      "label": "avalanche 🏔️",
+      "shots": [
+        "avalanche",
+        "snow avalanche mountain"
+      ]
+    },
+    {
+      "label": "lava 🌋",
+      "shots": [
+        "volcano eruption",
+        "lava flow"
+      ]
+    }
+  ]
+}

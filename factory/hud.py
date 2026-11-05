@@ -143,18 +143,57 @@ def overlay(spec):
     return Image.alpha_composite(scanlines(), glowing)
 
 
-def ranking_layer(title, items, current):
-    """Countdown board: persistent title on top + list of slots, revealed as we go.
+_EMOJI_FONT = None
+
+
+def _emoji_img(ch, size):
+    """Colour emoji via Noto Color Emoji (bitmap font only renders at 109 px)."""
+    global _EMOJI_FONT
+    if _EMOJI_FONT is None:
+        _EMOJI_FONT = False
+        for f in ["NotoColorEmoji.ttf", "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"]:
+            try:
+                _EMOJI_FONT = ImageFont.truetype(f, 109)
+                break
+            except OSError:
+                continue
+    if not _EMOJI_FONT:
+        return None
+    im = Image.new("RGBA", (136, 128), (0, 0, 0, 0))
+    ImageDraw.Draw(im).text((0, 0), ch, font=_EMOJI_FONT, embedded_color=True)
+    bbox = im.getbbox()
+    if not bbox:
+        return None
+    im = im.crop(bbox)
+    return im.resize((int(im.width * size / im.height), size), Image.LANCZOS)
+
+
+def _split_emoji(label):
+    parts = label.split(" ")
+    if parts and parts[-1] and not parts[-1].isascii():
+        return " ".join(parts[:-1]), parts[-1]
+    return label, None
+
+
+HOT = {1: (255, 70, 70), 2: (255, 150, 40), 3: (255, 214, 10)}
+
+
+def ranking_layer(title, items, current, numbers_hot=False, top=None):
+    """Countdown board: persistent title on top + leaderboard slots, revealed as we go.
 
     items: list of (number, label) in reveal order (e.g. 5..1); current: index into items
-    being told now (-1 = intro, nothing revealed yet).
+    being shown now (-1 = intro). Labels may end with an emoji.
     """
     base = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    # dark fade behind the title for legibility on bright footage
+    grad = Image.new("L", (1, 420))
+    for y in range(420):
+        grad.putpixel((0, y), int(200 * (1 - y / 420) ** 1.4))
+    base.paste(Image.new("RGBA", (W, 420), (0, 0, 0, 255)), (0, 0), grad.resize((W, 420)))
     d = ImageDraw.Draw(base)
     brackets(d)
-    # title, two lines, centred; first word yellow
-    ft = font("display", 70)
-    y = 110
+    ft = font("display", 74)
+    y = 105
     for li, line in enumerate(title):
         words = line.split()
         widths = [d.textlength(w + " ", font=ft) for w in words]
@@ -163,20 +202,29 @@ def ranking_layer(title, items, current):
             col = YELLOW if (li == 0 and wi == 0) else WHITE
             d.text((x, y), w, font=ft, fill=col + (255,), stroke_width=5, stroke_fill=(0, 10, 20, 255))
             x += wd
-        y += 88
-    # slots, listed 1..N top to bottom like a leaderboard
-    fl = font("display", 56)
+        y += 92
+    fl = font("display", 60)
     order = sorted(items, key=lambda it: it[0])
     revealed = {items[i][0] for i in range(0, current + 1)} if current >= 0 else set()
     now = items[current][0] if current >= 0 else None
-    y = 360
+    y = top if top is not None else (360 if not numbers_hot else 560)
     for num, lab in order:
         is_now = num == now
-        col = YELLOW if is_now else (CYAN if num in revealed else (150, 175, 185))
-        txt = f"{num}. {lab if num in revealed else ''}"
+        num_col = HOT.get(num, WHITE) if numbers_hot else (YELLOW if is_now else CYAN)
+        txt_col = YELLOW if is_now else WHITE
         if is_now:
-            d.polygon([(48, y + 22), (48, y + 50), (68, y + 36)], fill=YELLOW + (255,))
-        d.text((80, y), txt, font=fl, fill=col + (255,), stroke_width=4, stroke_fill=(0, 10, 20, 255))
-        y += 76
-    glowing = _glow(base, radius=8, strength=1)
-    return Image.alpha_composite(scanlines(), glowing)
+            d.polygon([(40, y + 24), (40, y + 54), (62, y + 39)], fill=YELLOW + (255,))
+        d.text((74, y), f"{num}.", font=fl, fill=num_col + (255,), stroke_width=4,
+               stroke_fill=(0, 0, 0, 255))
+        if num in revealed:
+            text, emo = _split_emoji(lab)
+            x = 74 + d.textlength(f"{num}. ", font=fl)
+            d.text((x, y), text, font=fl, fill=txt_col + (255,), stroke_width=4,
+                   stroke_fill=(0, 0, 0, 255))
+            if emo:
+                ei = _emoji_img(emo, 58)
+                if ei:
+                    base.alpha_composite(ei, (int(x + d.textlength(text + " ", font=fl)), y + 10))
+        y += 84
+    glowing = _glow(base, radius=6, strength=1)
+    return glowing
