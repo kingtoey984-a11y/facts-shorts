@@ -141,3 +141,42 @@ def overlay(spec):
         ruler(d, *spec["ruler"])
     glowing = _glow(base, radius=9, strength=2)
     return Image.alpha_composite(scanlines(), glowing)
+
+
+def ranking_layer(title, items, current):
+    """Countdown board: persistent title on top + list of slots, revealed as we go.
+
+    items: list of (number, label) in reveal order (e.g. 5..1); current: index into items
+    being told now (-1 = intro, nothing revealed yet).
+    """
+    base = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(base)
+    brackets(d)
+    # title, two lines, centred; first word yellow
+    ft = font("display", 70)
+    y = 110
+    for li, line in enumerate(title):
+        words = line.split()
+        widths = [d.textlength(w + " ", font=ft) for w in words]
+        x = (W - sum(widths)) / 2
+        for wi, (w, wd) in enumerate(zip(words, widths)):
+            col = YELLOW if (li == 0 and wi == 0) else WHITE
+            d.text((x, y), w, font=ft, fill=col + (255,), stroke_width=5, stroke_fill=(0, 10, 20, 255))
+            x += wd
+        y += 88
+    # slots, listed 1..N top to bottom like a leaderboard
+    fl = font("display", 56)
+    order = sorted(items, key=lambda it: it[0])
+    revealed = {items[i][0] for i in range(0, current + 1)} if current >= 0 else set()
+    now = items[current][0] if current >= 0 else None
+    y = 360
+    for num, lab in order:
+        is_now = num == now
+        col = YELLOW if is_now else (CYAN if num in revealed else (150, 175, 185))
+        txt = f"{num}. {lab if num in revealed else ''}"
+        if is_now:
+            d.polygon([(48, y + 22), (48, y + 50), (68, y + 36)], fill=YELLOW + (255,))
+        d.text((80, y), txt, font=fl, fill=col + (255,), stroke_width=4, stroke_fill=(0, 10, 20, 255))
+        y += 76
+    glowing = _glow(base, radius=8, strength=1)
+    return Image.alpha_composite(scanlines(), glowing)

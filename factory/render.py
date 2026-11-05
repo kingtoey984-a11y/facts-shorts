@@ -50,7 +50,10 @@ def choose(plan, picks, shots):
         if isinstance(pick, int):
             pick = {"i": pick}
         # "from" lets a reviewer borrow a better candidate found under another shot's search
-        items = plan["candidates"].get(pick.get("from", s["id"]), {}).get("items", [])
+        src_plan = plan
+        if pick.get("ep"):
+            src_plan = load_json(episode_dir(pick["ep"]) / "plan.json")
+        items = src_plan["candidates"].get(pick.get("from", s["id"]), {}).get("items", [])
         idx, ss = pick.get("i", 0), pick.get("ss")
         order = [idx] + [i for i in range(len(items)) if i != idx]
         chosen = next((items[i] for i in order if i < len(items)
@@ -70,8 +73,14 @@ def choose(plan, picks, shots):
 def make_overlays(ep, s, build):
     """Static DNA layer (brackets, scanlines, file tag) + optional animated callout layer."""
     line = ep["lines"][s["line"]]
-    tag_text = f"FILE {ep['id'][-2:]} // {line.get('tag', ep.get('tag', 'UNSEEN'))}"
-    base = hud.overlay({"tag": tag_text})
+    rk = ep.get("ranking")
+    if rk:
+        items = [(it["n"], it["label"]) for it in rk["items"]]
+        cur = line.get("rank_index", -1)
+        base = hud.ranking_layer(rk["title"], items, cur)
+    else:
+        tag_text = f"FILE {ep['id'][-2:]} // {line.get('tag', ep.get('tag', 'UNSEEN'))}"
+        base = hud.overlay({"tag": tag_text})
     base_png = build / f"{s['id']}_base.png"
     base.save(base_png)
     spec = (ep.get("hud") or {}).get(s["id"])
@@ -188,7 +197,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 
 
 # ---------- audio ----------
-def build_audio(wd, t0, total, line_starts, out):
+def build_audio(wd, t0, total, line_starts, out, lufs=-14):
     voice = wd / "voice.mp3"
     inputs = ["-ss", f"{t0:.3f}", "-t", f"{total:.3f}", "-i", str(voice)]
     filters = ["[0:a]aresample=48000,volume=1.0[v]"]
@@ -219,7 +228,7 @@ def build_audio(wd, t0, total, line_starts, out):
         mix.append("[md]")
         n += 1
     filters.append(f"{''.join(mix)}amix=inputs={len(mix)}:normalize=0:duration=first,"
-                   f"loudnorm=I=-14:TP=-1.5:LRA=11,atrim=0:{total:.3f}[a]")
+                   f"loudnorm=I={lufs}:TP=-1.0:LRA=9,atrim=0:{total:.3f}[a]")
     run(["ffmpeg", "-y", "-v", "error", *inputs, "-filter_complex", ";".join(filters),
          "-map", "[a]", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", str(out)])
 
@@ -265,7 +274,7 @@ def main(ep_id, preview=False):
          "-c", "copy", str(build / "video.mp4")])
 
     write_ass(words, total, build / "captions.ass")
-    build_audio(wd, t0, total, line_starts, build / "audio.m4a")
+    build_audio(wd, t0, total, line_starts, build / "audio.m4a", ep.get("lufs", -14))
 
     out_dir = ROOT / "clips"
     out_dir.mkdir(exist_ok=True)
@@ -281,7 +290,7 @@ def main(ep_id, preview=False):
     lufs = measure_lufs(final)
     qc = {"duration": round(dur, 2), "lufs": lufs, "shots": len(shots),
           "avg_shot": round(total / len(shots), 2),
-          "ok_duration": dur <= 59.5, "ok_loudness": lufs is not None and -16 <= lufs <= -12,
+          "ok_duration": dur <= 59.5, "ok_loudness": lufs is not None and abs(lufs - ep.get("lufs", -14)) <= 3,
           "footage": [{"shot": s["id"], "source": s["clip"]["source"], "page": s["clip"]["page"]}
                       for s in shots]}
     credit = ""

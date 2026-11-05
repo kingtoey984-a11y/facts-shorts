@@ -1,0 +1,109 @@
+{
+  "id": "ep002",
+  "format": "ranking",
+  "channel": "Unseen Files",
+  "topic": "ranking creepy things your body does while you sleep",
+  "title": "Ranking the CREEPIEST Things Your Body Does at Night 😨",
+  "description": "#1 happens to you every single night... Which one creeped you out the most?",
+  "hashtags": [
+    "#shorts",
+    "#facts",
+    "#sleep",
+    "#humanbody",
+    "#ranking",
+    "#creepy"
+  ],
+  "loop": true,
+  "lufs": -10,
+  "voice_id": "TX3LPaxmHKxFdv7VOQHJ",
+  "voice_settings": {
+    "stability": 0.32,
+    "similarity_boost": 0.8,
+    "style": 0.6,
+    "use_speaker_boost": true,
+    "speed": 1.08
+  },
+  "ranking": {
+    "title": [
+      "RANKING THE CREEPIEST",
+      "THINGS YOUR BODY DOES AT NIGHT"
+    ],
+    "items": [
+      {
+        "n": 5,
+        "label": "GROW TALLER"
+      },
+      {
+        "n": 4,
+        "label": "NOSE OFF"
+      },
+      {
+        "n": 3,
+        "label": "BRAIN WASH"
+      },
+      {
+        "n": 2,
+        "label": "FALLING JOLT"
+      },
+      {
+        "n": 1,
+        "label": "PARALYSIS"
+      }
+    ]
+  },
+  "lines": [
+    {
+      "text": "Ranking the creepiest things your body does while you sleep.",
+      "rank_index": -1,
+      "shots": [
+        "L0S0",
+        "L0S1"
+      ]
+    },
+    {
+      "text": "Number five: you grow. Your spine stretches out overnight, and you wake up a centimeter taller.",
+      "rank_index": 0,
+      "shots": [
+        "L1S0",
+        "L1S1",
+        "L1S2"
+      ]
+    },
+    {
+      "text": "Number four: your nose shuts off. Smoke almost never wakes a sleeping person.",
+      "rank_index": 1,
+      "shots": [
+        "L2S0",
+        "L2S1",
+        "L2S2"
+      ]
+    },
+    {
+      "text": "Number three: your brain washes itself, flushing out the day's waste.",
+      "rank_index": 2,
+      "shots": [
+        "L3S0",
+        "L3S1",
+        "L3S2"
+      ]
+    },
+    {
+      "text": "Number two: that falling jolt? It's your muscles twitching as you drift off.",
+      "rank_index": 3,
+      "shots": [
+        "L4S0",
+        "L4S1",
+        "L4S2"
+      ]
+    },
+    {
+      "text": "And number one: every night, your body paralyzes you, so you can't act out your dreams.",
+      "rank_index": 4,
+      "shots": [
+        "L5S0",
+        "L5S1",
+        "L5S2"
+      ]
+    }
+  ]
+}
