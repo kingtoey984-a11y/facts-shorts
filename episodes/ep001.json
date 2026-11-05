@@ -84,5 +84,168 @@
     "style": 0.6,
     "use_speaker_boost": true,
     "speed": 1.08
+  },
+  "hud": {
+    "L0S0": {
+      "rings": [
+        [
+          520,
+          420,
+          95
+        ]
+      ],
+      "labels": [
+        {
+          "text": "MUSCLES: OFF",
+          "from": [
+            590,
+            490
+          ],
+          "to": [
+            700,
+            760
+          ],
+          "sub": "REM ATONIA"
+        }
+      ]
+    },
+    "L2S0": {
+      "rings": [
+        [
+          540,
+          900,
+          130
+        ]
+      ],
+      "labels": [
+        {
+          "text": "NIGHT SHIFT",
+          "from": [
+            460,
+            790
+          ],
+          "to": [
+            330,
+            560
+          ],
+          "sub": "CLEANING MODE"
+        }
+      ]
+    },
+    "L2S1": {
+      "rings": [
+        [
+          560,
+          800,
+          110
+        ]
+      ],
+      "labels": [
+        {
+          "text": "WASTE FLUSH",
+          "from": [
+            490,
+            720
+          ],
+          "to": [
+            330,
+            500
+          ],
+          "sub": "GLYMPHATIC SYSTEM"
+        }
+      ]
+    },
+    "L3S0": {
+      "ruler": [
+        130,
+        560,
+        980,
+        "+1 CM"
+      ]
+    },
+    "L3S1": {
+      "rings": [
+        [
+          420,
+          1000,
+          90
+        ]
+      ],
+      "labels": [
+        {
+          "text": "SPINAL DISCS",
+          "from": [
+            490,
+            940
+          ],
+          "to": [
+            660,
+            640
+          ],
+          "sub": "REFILL OVERNIGHT"
+        }
+      ]
+    },
+    "L4S0": {
+      "rings": [
+        [
+          560,
+          780,
+          110
+        ]
+      ],
+      "labels": [
+        {
+          "text": "SMELL: OFFLINE",
+          "from": [
+            630,
+            700
+          ],
+          "to": [
+            720,
+            480
+          ],
+          "sub": "WHILE YOU SLEEP"
+        }
+      ]
+    },
+    "L4S1": {
+      "rings": [
+        [
+          950,
+          560,
+          80
+        ]
+      ],
+      "labels": [
+        {
+          "text": "NOSE: OFF DUTY",
+          "from": [
+            890,
+            500
+          ],
+          "to": [
+            640,
+            330
+          ]
+        }
+      ]
+    },
+    "L5S0": {
+      "labels": [
+        {
+          "text": "HYPNIC JERK",
+          "from": [
+            560,
+            900
+          ],
+          "to": [
+            330,
+            560
+          ],
+          "sub": "FEELS LIKE FALLING"
+        }
+      ]
+    }
   }
 }
