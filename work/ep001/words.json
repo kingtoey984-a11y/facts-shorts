@@ -1,0 +1,511 @@
+{
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "text": "Every night, your body paralyzes you, and that's not even the weirdest part. While you dream, your brain switches off almost every muscle, so you don't act out your dreams. It also gives itself a bath. Fluid flushes out the waste your brain made all day. You wake up about a centimeter taller, because the discs in your spine refill overnight. Your nose goes off duty. Smoke rarely wakes a sleeping person, which is why smoke alarms are so loud. And that falling jolt as you drift off? It's a hypnic jerk, a muscle twitch, not a fall. So tonight, remember:",
+  "words": [
+    {
+      "w": "Every",
+      "start": 0.035,
+      "end": 0.348
+    },
+    {
+      "w": "night,",
+      "start": 0.418,
+      "end": 0.65
+    },
+    {
+      "w": "your",
+      "start": 0.685,
+      "end": 0.813
+    },
+    {
+      "w": "body",
+      "start": 0.859,
+      "end": 1.08
+    },
+    {
+      "w": "paralyzes",
+      "start": 1.138,
+      "end": 1.718
+    },
+    {
+      "w": "you,",
+      "start": 1.776,
+      "end": 2.055
+    },
+    {
+      "w": "and",
+      "start": 2.218,
+      "end": 2.357
+    },
+    {
+      "w": "that's",
+      "start": 2.403,
+      "end": 2.624
+    },
+    {
+      "w": "not",
+      "start": 2.74,
+      "end": 2.984
+    },
+    {
+      "w": "even",
+      "start": 3.042,
+      "end": 3.239
+    },
+    {
+      "w": "the",
+      "start": 3.274,
+      "end": 3.344
+    },
+    {
+      "w": "weirdest",
+      "start": 3.379,
+      "end": 3.68
+    },
+    {
+      "w": "part.",
+      "start": 3.727,
+      "end": 4.122
+    },
+    {
+      "w": "While",
+      "start": 4.54,
+      "end": 4.795
+    },
+    {
+      "w": "you",
+      "start": 4.83,
+      "end": 4.911
+    },
+    {
+      "w": "dream,",
+      "start": 4.981,
+      "end": 5.271
+    },
+    {
+      "w": "your",
+      "start": 5.294,
+      "end": 5.41
+    },
+    {
+      "w": "brain",
+      "start": 5.457,
+      "end": 5.666
+    },
+    {
+      "w": "switches",
+      "start": 5.724,
+      "end": 6.118
+    },
+    {
+      "w": "off",
+      "start": 6.188,
+      "end": 6.385
+    },
+    {
+      "w": "almost",
+      "start": 6.455,
+      "end": 6.757
+    },
+    {
+      "w": "every",
+      "start": 6.85,
+      "end": 7.094
+    },
+    {
+      "w": "muscle,",
+      "start": 7.152,
+      "end": 7.639
+    },
+    {
+      "w": "so",
+      "start": 7.906,
+      "end": 8.022
+    },
+    {
+      "w": "you",
+      "start": 8.104,
+      "end": 8.173
+    },
+    {
+      "w": "don't",
+      "start": 8.231,
+      "end": 8.429
+    },
+    {
+      "w": "act",
+      "start": 8.464,
+      "end": 8.615
+    },
+    {
+      "w": "out",
+      "start": 8.661,
+      "end": 8.777
+    },
+    {
+      "w": "your",
+      "start": 8.824,
+      "end": 8.928
+    },
+    {
+      "w": "dreams.",
+      "start": 8.975,
+      "end": 9.474
+    },
+    {
+      "w": "It",
+      "start": 9.787,
+      "end": 9.915
+    },
+    {
+      "w": "also",
+      "start": 9.961,
+      "end": 10.194
+    },
+    {
+      "w": "gives",
+      "start": 10.252,
+      "end": 10.426
+    },
+    {
+      "w": "itself",
+      "start": 10.472,
+      "end": 10.751
+    },
+    {
+      "w": "a",
+      "start": 10.809,
+      "end": 10.832
+    },
+    {
+      "w": "bath.",
+      "start": 10.89,
+      "end": 11.32
+    },
+    {
+      "w": "Fluid",
+      "start": 11.738,
+      "end": 12.098
+    },
+    {
+      "w": "flushes",
+      "start": 12.144,
+      "end": 12.516
+    },
+    {
+      "w": "out",
+      "start": 12.574,
+      "end": 12.725
+    },
+    {
+      "w": "the",
+      "start": 12.783,
+      "end": 12.864
+    },
+    {
+      "w": "waste",
+      "start": 12.922,
+      "end": 13.131
+    },
+    {
+      "w": "your",
+      "start": 13.154,
+      "end": 13.27
+    },
+    {
+      "w": "brain",
+      "start": 13.305,
+      "end": 13.503
+    },
+    {
+      "w": "made",
+      "start": 13.561,
+      "end": 13.723
+    },
+    {
+      "w": "all",
+      "start": 13.746,
+      "end": 13.874
+    },
+    {
+      "w": "day.",
+      "start": 13.932,
+      "end": 14.304
+    },
+    {
+      "w": "You",
+      "start": 14.617,
+      "end": 14.745
+    },
+    {
+      "w": "wake",
+      "start": 14.826,
+      "end": 15.023
+    },
+    {
+      "w": "up",
+      "start": 15.058,
+      "end": 15.163
+    },
+    {
+      "w": "about",
+      "start": 15.221,
+      "end": 15.43
+    },
+    {
+      "w": "a",
+      "start": 15.465,
+      "end": 15.488
+    },
+    {
+      "w": "centimeter",
+      "start": 15.546,
+      "end": 16.045
+    },
+    {
+      "w": "taller,",
+      "start": 16.103,
+      "end": 16.591
+    },
+    {
+      "w": "because",
+      "start": 16.788,
+      "end": 17.102
+    },
+    {
+      "w": "the",
+      "start": 17.136,
+      "end": 17.218
+    },
+    {
+      "w": "discs",
+      "start": 17.299,
+      "end": 17.682
+    },
+    {
+      "w": "in",
+      "start": 17.729,
+      "end": 17.798
+    },
+    {
+      "w": "your",
+      "start": 17.845,
+      "end": 17.961
+    },
+    {
+      "w": "spine",
+      "start": 18.019,
+      "end": 18.448
+    },
+    {
+      "w": "refill",
+      "start": 18.564,
+      "end": 18.971
+    },
+    {
+      "w": "overnight.",
+      "start": 19.041,
+      "end": 19.621
+    },
+    {
+      "w": "Your",
+      "start": 19.934,
+      "end": 20.097
+    },
+    {
+      "w": "nose",
+      "start": 20.167,
+      "end": 20.387
+    },
+    {
+      "w": "goes",
+      "start": 20.422,
+      "end": 20.596
+    },
+    {
+      "w": "off",
+      "start": 20.643,
+      "end": 20.794
+    },
+    {
+      "w": "duty.",
+      "start": 20.852,
+      "end": 21.281
+    },
+    {
+      "w": "Smoke",
+      "start": 21.595,
+      "end": 21.966
+    },
+    {
+      "w": "rarely",
+      "start": 22.059,
+      "end": 22.442
+    },
+    {
+      "w": "wakes",
+      "start": 22.512,
+      "end": 22.767
+    },
+    {
+      "w": "a",
+      "start": 22.814,
+      "end": 22.849
+    },
+    {
+      "w": "sleeping",
+      "start": 22.895,
+      "end": 23.267
+    },
+    {
+      "w": "person,",
+      "start": 23.325,
+      "end": 23.847
+    },
+    {
+      "w": "which",
+      "start": 24.044,
+      "end": 24.23
+    },
+    {
+      "w": "is",
+      "start": 24.277,
+      "end": 24.358
+    },
+    {
+      "w": "why",
+      "start": 24.416,
+      "end": 24.59
+    },
+    {
+      "w": "smoke",
+      "start": 24.706,
+      "end": 25.031
+    },
+    {
+      "w": "alarms",
+      "start": 25.066,
+      "end": 25.391
+    },
+    {
+      "w": "are",
+      "start": 25.426,
+      "end": 25.519
+    },
+    {
+      "w": "so",
+      "start": 25.554,
+      "end": 25.67
+    },
+    {
+      "w": "loud.",
+      "start": 25.751,
+      "end": 26.181
+    },
+    {
+      "w": "And",
+      "start": 26.541,
+      "end": 26.692
+    },
+    {
+      "w": "that",
+      "start": 26.738,
+      "end": 26.866
+    },
+    {
+      "w": "falling",
+      "start": 26.947,
+      "end": 27.307
+    },
+    {
+      "w": "jolt",
+      "start": 27.377,
+      "end": 27.655
+    },
+    {
+      "w": "as",
+      "start": 27.69,
+      "end": 27.748
+    },
+    {
+      "w": "you",
+      "start": 27.795,
+      "end": 27.864
+    },
+    {
+      "w": "drift",
+      "start": 27.899,
+      "end": 28.143
+    },
+    {
+      "w": "off?",
+      "start": 28.201,
+      "end": 28.526
+    },
+    {
+      "w": "It's",
+      "start": 28.607,
+      "end": 28.805
+    },
+    {
+      "w": "a",
+      "start": 28.84,
+      "end": 28.875
+    },
+    {
+      "w": "hypnic",
+      "start": 28.956,
+      "end": 29.316
+    },
+    {
+      "w": "jerk,",
+      "start": 29.374,
+      "end": 29.803
+    },
+    {
+      "w": "a",
+      "start": 30.117,
+      "end": 30.198
+    },
+    {
+      "w": "muscle",
+      "start": 30.314,
+      "end": 30.639
+    },
+    {
+      "w": "twitch,",
+      "start": 30.674,
+      "end": 31.069
+    },
+    {
+      "w": "not",
+      "start": 31.208,
+      "end": 31.394
+    },
+    {
+      "w": "a",
+      "start": 31.429,
+      "end": 31.452
+    },
+    {
+      "w": "fall.",
+      "start": 31.51,
+      "end": 31.928
+    },
+    {
+      "w": "So",
+      "start": 32.288,
+      "end": 32.439
+    },
+    {
+      "w": "tonight,",
+      "start": 32.508,
+      "end": 32.88
+    },
+    {
+      "w": "remember:",
+      "start": 32.915,
+      "end": 33.472
+    }
+  ]
+}
