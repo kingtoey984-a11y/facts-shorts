@@ -44,7 +44,7 @@ jobs:
           fi
 
       - name: Fetch (voice + footage candidates)
-        if: steps.job.outputs.stage == 'fetch' || steps.job.outputs.stage == 'all'
+        if: contains(steps.job.outputs.stage, 'fetch') || steps.job.outputs.stage == 'all'
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
@@ -57,8 +57,18 @@ jobs:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
         run: cd factory && python3 voice_samples.py
 
+      - name: Re-voice
+        if: contains(steps.job.outputs.stage, 'revoice')
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: cd factory && python3 fetch.py ${{ steps.job.outputs.episode }} --voice-only
+
+      - name: Preview
+        if: contains(steps.job.outputs.stage, 'preview')
+        run: cd factory && python3 render.py ${{ steps.job.outputs.episode }} --preview
+
       - name: Render
-        if: steps.job.outputs.stage == 'render' || steps.job.outputs.stage == 'all'
+        if: contains(steps.job.outputs.stage, 'render') || steps.job.outputs.stage == 'all'
         run: cd factory && python3 render.py ${{ steps.job.outputs.episode }}
 
       - name: Save results

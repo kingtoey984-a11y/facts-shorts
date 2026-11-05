@@ -8,6 +8,7 @@ import re
 import sys
 from pathlib import Path
 
+import hud
 from common import (FPS, H, ROOT, W, die, download, episode_dir, load_json, log,
                     probe_duration, run, save_json)
 
@@ -66,7 +67,24 @@ def choose(plan, picks, shots):
         s["clip"], s["ss"] = chosen, ss
 
 
-def render_shot(s, idx, cache, out):
+def make_overlays(ep, s, build):
+    """Static DNA layer (brackets, scanlines, file tag) + optional animated callout layer."""
+    line = ep["lines"][s["line"]]
+    tag_text = f"FILE {ep['id'][-2:]} // {line.get('tag', ep.get('tag', 'UNSEEN'))}"
+    base = hud.overlay({"tag": tag_text})
+    base_png = build / f"{s['id']}_base.png"
+    base.save(base_png)
+    spec = (ep.get("hud") or {}).get(s["id"])
+    if not spec:
+        return base_png, None
+    from PIL import Image
+    callout = hud.overlay_parts(spec)
+    call_png = build / f"{s['id']}_call.png"
+    callout.save(call_png)
+    return base_png, call_png
+
+
+def render_shot(s, idx, cache, out, base_png, call_png):
     c = s["clip"]
     src = download(c["url"], cache / f"{c['source']}_{c['id']}.mp4")
     clip_len = probe_duration(src)
@@ -80,14 +98,23 @@ def render_shot(s, idx, cache, out):
         z = f"1+0.10*on/{frames}"
     else:
         z = f"1.10-0.10*on/{frames}"
-    vf = (f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
+    fc = (f"[0:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
           f"scale={W*2}:{H*2},"
           f"zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps={FPS},"
-          f"eq=contrast=1.08:saturation=1.15:gamma=0.97,vignette=PI/5,setsar=1")
+          f"setsar=1,{hud.GRADE}[g];"
+          f"[1:v]format=rgba[b];[g][b]overlay=0:0:shortest=1[gb]")
+    inputs = ["-loop", "1", "-framerate", str(FPS), "-i", str(base_png)]
+    last = "gb"
+    if call_png:
+        inputs += ["-loop", "1", "-framerate", str(FPS), "-i", str(call_png)]
+        fc += (f";[2:v]format=rgba,fade=in:st=0.12:d=0.22:alpha=1[c];"
+               f"[gb][c]overlay=0:0:shortest=1[gc]")
+        last = "gc"
     loop = ["-stream_loop", "-1"] if clip_len < need else []
-    run(["ffmpeg", "-y", "-v", "error", *loop, "-ss", f"{ss:.2f}", "-i", str(src),
-         "-vf", vf, "-frames:v", str(frames), "-an", "-c:v", "libx264", "-preset", "veryfast",
-         "-crf", "18", "-pix_fmt", "yuv420p", "-r", str(FPS), str(out)])
+    run(["ffmpeg", "-y", "-v", "error", *loop, "-ss", f"{ss:.2f}", "-i", str(src), *inputs,
+         "-filter_complex", fc, "-map", f"[{last}]", "-frames:v", str(frames), "-an",
+         "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p",
+         "-r", str(FPS), str(out)])
 
 
 # ---------- captions ----------
@@ -204,7 +231,7 @@ def measure_lufs(path):
 
 
 # ---------- main ----------
-def main(ep_id):
+def main(ep_id, preview=False):
     ep = load_json(ROOT / "episodes" / f"{ep_id}.json")
     wd = episode_dir(ep_id)
     plan = load_json(wd / "plan.json")
@@ -219,10 +246,20 @@ def main(ep_id):
     cache = wd / "_cache"
     build.mkdir(exist_ok=True)
     listing = []
+    pv = wd / "preview"
+    if preview:
+        pv.mkdir(exist_ok=True)
     for i, s in enumerate(shots):
         out = build / f"shot{i:02d}.mp4"
-        render_shot(s, i, cache, out)
+        base_png, call_png = make_overlays(ep, s, build)
+        render_shot(s, i, cache, out, base_png, call_png)
         listing.append(f"file '{out.name}'")
+        if preview:
+            run(["ffmpeg", "-y", "-v", "error", "-ss", f"{s['dur'] * 0.6:.2f}", "-i", str(out),
+                 "-frames:v", "1", "-vf", "scale=540:960", str(pv / f"{s['id']}.jpg")])
+    if preview:
+        log("preview frames written")
+        return
     (build / "list.txt").write_text("\n".join(listing))
     run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(build / "list.txt"),
          "-c", "copy", str(build / "video.mp4")])
@@ -263,4 +300,4 @@ def main(ep_id):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(sys.argv[1], preview="--preview" in sys.argv)

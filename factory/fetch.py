@@ -119,7 +119,8 @@ def main(ep_id):
     text = " ".join(l["text"] for l in ep["lines"])
     mp3, wjson = wd / "voice.mp3", wd / "words.json"
     if not mp3.exists():
-        voice.synthesize(text, mp3, wjson, voice_id=ep.get("voice_id", voice.DEFAULT_VOICE))
+        voice.synthesize(text, mp3, wjson, voice_id=ep.get("voice_id", voice.DEFAULT_VOICE),
+                         settings=ep.get("voice_settings"))
     words = load_json(wjson)["words"]
     spans = line_spans(ep["lines"], words)
 
@@ -143,5 +144,22 @@ def main(ep_id):
     log("fetch stage done")
 
 
+def revoice(ep_id):
+    """Re-record narration only (same script), keeping footage candidates and picks."""
+    ep = load_json(ROOT / "episodes" / f"{ep_id}.json")
+    wd = episode_dir(ep_id)
+    text = " ".join(l["text"] for l in ep["lines"])
+    voice.synthesize(text, wd / "voice.mp3", wd / "words.json",
+                     voice_id=ep.get("voice_id", voice.DEFAULT_VOICE), settings=ep.get("voice_settings"))
+    words = load_json(wd / "words.json")["words"]
+    plan = load_json(wd / "plan.json")
+    for l, span in zip(plan["lines"], line_spans(ep["lines"], words)):
+        l["words"] = list(span)
+    save_json(wd / "plan.json", plan)
+
+
 if __name__ == "__main__":
-    main(sys.argv[1])
+    if "--voice-only" in sys.argv:
+        revoice(sys.argv[1])
+    else:
+        main(sys.argv[1])

@@ -42,7 +42,7 @@ def pick_voice(preferred):
     return voices[0]["voice_id"]
 
 
-def synthesize(text, out_mp3, out_words, voice_id=DEFAULT_VOICE, speed=1.05):
+def synthesize(text, out_mp3, out_words, voice_id=DEFAULT_VOICE, speed=1.05, settings=None):
     left = credits_left()
     if left is not None:
         log(f"ElevenLabs credits left: {left}")
@@ -53,8 +53,8 @@ def synthesize(text, out_mp3, out_words, voice_id=DEFAULT_VOICE, speed=1.05):
     payload = {
         "text": text,
         "model_id": MODEL,
-        "voice_settings": {"stability": 0.45, "similarity_boost": 0.8,
-                           "style": 0.35, "use_speaker_boost": True, "speed": speed},
+        "voice_settings": settings or {"stability": 0.45, "similarity_boost": 0.8,
+                                       "style": 0.35, "use_speaker_boost": True, "speed": speed},
     }
     raw = http(f"{API}/text-to-speech/{voice_id}/with-timestamps?output_format=mp3_44100_192",
                data=payload, headers=_headers(), method="POST", timeout=300)

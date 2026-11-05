@@ -113,6 +113,19 @@ def ruler(d, x, y1, y2, text, color=YELLOW):
            stroke_fill=(0, 0, 0, 255))
 
 
+def overlay_parts(spec):
+    """Callout-only layer (rings, labels, ruler) for the animated pop-in."""
+    base = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(base)
+    for r in spec.get("rings", []):
+        ring(d, *r)
+    for lb in spec.get("labels", []):
+        label(d, lb["text"], tuple(lb["from"]), tuple(lb["to"]), lb.get("sub"))
+    if spec.get("ruler"):
+        ruler(d, *spec["ruler"])
+    return _glow(base, radius=9, strength=2)
+
+
 def overlay(spec):
     """spec: dict with optional keys tag, rings[], labels[], ruler, counter."""
     base = Image.new("RGBA", (W, H), (0, 0, 0, 0))
