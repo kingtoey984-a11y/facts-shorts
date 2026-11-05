@@ -22,8 +22,11 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Tools
+        timeout-minutes: 6
         run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core > /dev/null
+          if ! command -v ffmpeg >/dev/null; then
+            for i in 1 2 3; do sudo timeout 150 apt-get update -qq && sudo timeout 150 apt-get install -y -qq ffmpeg fonts-dejavu-core > /dev/null && break; sleep 5; done
+          fi
           pip install -q pillow
           mkdir -p assets/fonts
           [ -f assets/fonts/Anton-Regular.ttf ] || curl -sSL -o assets/fonts/Anton-Regular.ttf \
