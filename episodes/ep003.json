@@ -24,21 +24,21 @@
   "music_track": "Volatile_Reaction.mp3",
   "items": [
     {
-      "label": "too close ⚡",
+      "label": "lightning ⚡",
       "shots": [
         "lightning strike",
         "lightning storm night"
       ]
     },
     {
-      "label": "rogue wave 🌊",
+      "label": "supercell 🌀",
       "shots": [
         "huge waves storm",
         "big wave crash"
       ]
     },
     {
-      "label": "firestorm 🔥",
+      "label": "wildfire 🔥",
       "shots": [
         "wildfire",
         "forest fire night"
@@ -52,14 +52,14 @@
       ]
     },
     {
-      "label": "avalanche 🏔️",
+      "label": "eruption 💥",
       "shots": [
         "avalanche",
         "snow avalanche mountain"
       ]
     },
     {
-      "label": "lava 🌋",
+      "label": "lava ocean 🌋",
       "shots": [
         "volcano eruption",
         "lava flow"
