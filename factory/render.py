@@ -36,7 +36,8 @@ def build_timeline(plan, words):
         ids = l["shots"][:max(1, int(length // MIN_SHOT))]
         step = length / len(ids)
         for k, sid in enumerate(ids):
-            shots.append({"id": sid, "line": li, "start": starts[li] + k * step, "dur": step})
+            shots.append({"id": sid, "line": li, "start": starts[li] + k * step, "dur": step,
+                          "punch": k == 0})
     return t0, total, starts, shots
 
 
@@ -73,12 +74,16 @@ def render_shot(s, idx, cache, out):
     ss = s["ss"] if s["ss"] is not None else min(0.4, max(0.0, clip_len - need))
     ss = max(0.0, min(ss, max(0.0, clip_len - need)))
     frames = max(1, round(s["dur"] * FPS))
-    zin = idx % 2 == 0
-    z = f"1+0.10*on/{frames}" if zin else f"1.10-0.10*on/{frames}"
+    if s.get("punch"):
+        z = f"if(lt(on,6),1.22-0.037*on,1.0+0.08*(on-6)/{frames})"
+    elif idx % 2 == 0:
+        z = f"1+0.10*on/{frames}"
+    else:
+        z = f"1.10-0.10*on/{frames}"
     vf = (f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
           f"scale={W*2}:{H*2},"
           f"zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps={FPS},"
-          f"eq=contrast=1.06:saturation=1.12,setsar=1")
+          f"eq=contrast=1.08:saturation=1.15:gamma=0.97,vignette=PI/5,setsar=1")
     loop = ["-stream_loop", "-1"] if clip_len < need else []
     run(["ffmpeg", "-y", "-v", "error", *loop, "-ss", f"{ss:.2f}", "-i", str(src),
          "-vf", vf, "-frames:v", str(frames), "-an", "-c:v", "libx264", "-preset", "veryfast",
@@ -164,7 +169,7 @@ def build_audio(wd, t0, total, line_starts, out):
     n = 1
     sfx = ROOT / "assets" / "sfx"
     cues = [("whoosh.mp3", max(0.0, t - 0.18), 0.32) for t in line_starts[1:]]
-    cues.append(("hit.mp3", line_starts[-1], 0.25))
+    cues.append(("hit.mp3", 0.0, 0.30))
     for name, at, vol in cues:
         f = sfx / name
         if not f.exists():
@@ -176,9 +181,10 @@ def build_audio(wd, t0, total, line_starts, out):
         n += 1
     music = sorted((ROOT / "assets" / "music").glob("*.mp3"))
     if music:
-        track = music[int(hashlib.md5(str(wd).encode()).hexdigest(), 16) % len(music)]
+        track = music[int(hashlib.md5(wd.name.encode()).hexdigest(), 16) % len(music)]
+        build_audio.track = track.name
         inputs += ["-stream_loop", "-1", "-i", str(track)]
-        filters.append(f"[{n}:a]aresample=48000,volume=0.12,atrim=0:{total:.3f}[m]")
+        filters.append(f"[{n}:a]aresample=48000,volume=0.16,atrim=0:{total:.3f}[m]")
         filters.append("[m][v]sidechaincompress=threshold=0.05:ratio=6:attack=20:release=300[md]")
         # sidechain consumes [v]; re-split voice first
         filters[0] = "[0:a]aresample=48000,asplit=2[v][vk]"
@@ -241,9 +247,15 @@ def main(ep_id):
           "ok_duration": dur <= 59.5, "ok_loudness": lufs is not None and -16 <= lufs <= -12,
           "footage": [{"shot": s["id"], "source": s["clip"]["source"], "page": s["clip"]["page"]}
                       for s in shots]}
-    save_json(out_dir / f"{ep_id}.qc.json", qc)
+    credit = ""
+    track = getattr(build_audio, "track", None)
+    cfile = ROOT / "assets" / "music" / "credits.json"
+    if track and cfile.exists():
+        credit = load_json(cfile).get(track, "")
     post = (f"TITLE:\n{ep['title']}\n\nDESCRIPTION:\n{ep['description']}\n\n"
-            f"{' '.join(ep['hashtags'])}\n")
+            f"{' '.join(ep['hashtags'])}\n" + (f"\n{credit}\n" if credit else ""))
+    qc["music"] = track
+    save_json(out_dir / f"{ep_id}.qc.json", qc)
     (out_dir / f"{ep_id}.post.txt").write_text(post, encoding="utf-8")
     log(f"QC: {qc['duration']}s, {lufs} LUFS, {len(shots)} shots")
     if not (qc["ok_duration"] and qc["ok_loudness"]):

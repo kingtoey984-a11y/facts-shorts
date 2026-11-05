@@ -1,38 +1,39 @@
 {
   "id": "ep001",
-  "topic": "5 strange things your body does while you sleep",
-  "title": "Your Body Does THIS Every Night 😳",
-  "description": "Five strange things your body does every single night while you sleep — and you never notice. Which one surprised you most?",
+  "version": 2,
+  "topic": "strange things your body does while you sleep",
+  "title": "Your Body Paralyzes You Every Night 😳",
+  "description": "Every night your body paralyzes you, washes your brain and makes you taller — and you never notice. Which one surprised you most?",
   "hashtags": ["#shorts", "#facts", "#sleep", "#humanbody", "#didyouknow", "#science"],
   "loop": true,
   "lines": [
     {
-      "text": "Every night, your body does five strange things, and you never notice a single one.",
-      "shots": ["woman sleeping bed night", "city night lights", "man sleeping dark room"]
+      "text": "Every night, your body paralyzes you, and that's not even the weirdest part.",
+      "shots": ["sleep paralysis", "woman sleeping dark bedroom", "man lying still bed night"]
     },
     {
-      "text": "One: it paralyzes you. During dream sleep, your brain shuts off almost every muscle, so you don't act out your dreams.",
-      "shots": ["sleeping face closeup", "dream surreal clouds", "person lying bed sleeping"]
+      "text": "While you dream, your brain switches off almost every muscle, so you don't act out your dreams.",
+      "shots": ["sleeping face night", "dream surreal fantasy", "person sleeping bed"]
     },
     {
-      "text": "Two: your brain takes a bath. Fluid washes through it, flushing out the waste that builds up while you're awake.",
-      "shots": ["brain", "water flowing abstract", "neurons network"]
+      "text": "It also gives itself a bath. Fluid flushes out the waste your brain made all day.",
+      "shots": ["brain mri scan", "brain glowing animation", "blue liquid flow"]
     },
     {
-      "text": "Three: you grow taller. With no weight pressing down, the discs in your spine expand. You wake up about a centimeter taller.",
-      "shots": ["spine skeleton", "stretching morning bed", "measuring tape"]
+      "text": "You wake up about a centimeter taller, because the discs in your spine refill overnight.",
+      "shots": ["spine vertebrae", "skeleton anatomy", "woman waking up stretching"]
     },
     {
-      "text": "Four: your nose stops guarding you. Smell almost never wakes a sleeping person, which is exactly why you need a smoke alarm.",
-      "shots": ["smoke", "nose closeup", "fire alarm"]
+      "text": "Your nose goes off duty. Smoke rarely wakes a sleeping person, which is why smoke alarms are so loud.",
+      "shots": ["smoke room dark", "smoke detector", "firefighter smoke"]
     },
     {
-      "text": "Five: that sudden falling jolt? It's a hypnic jerk, your muscles twitching as you slip into sleep.",
-      "shots": ["falling", "man wakes up startled", "sky diving"]
+      "text": "And that falling jolt as you drift off? It's a hypnic jerk, a muscle twitch, not a fall.",
+      "shots": ["falling down", "man wakes up suddenly", "falling through clouds"]
     },
     {
-      "text": "So tonight, when you close your eyes, remember:",
-      "shots": ["eyes closing", "night sky stars"]
+      "text": "So tonight, remember:",
+      "shots": ["eyes closing"]
     }
   ]
 }

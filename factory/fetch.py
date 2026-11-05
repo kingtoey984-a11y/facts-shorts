@@ -53,6 +53,31 @@ def make_sfx():
             log(f"::warning::sound effect {name} not created ({e}); clip will use no SFX for it")
 
 
+MUSIC = [  # Kevin MacLeod (incompetech.com), CC BY 4.0 - credit goes in the description
+    ("Hypnothis", "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Hypnothis.mp3"),
+    ("Dreamy Flashback", "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Dreamy%20Flashback.mp3"),
+    ("Night Vigil", "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Night%20Vigil.mp3"),
+]
+
+
+def get_music():
+    mdir = ROOT / "assets" / "music"
+    mdir.mkdir(parents=True, exist_ok=True)
+    credits = {}
+    for title, url in MUSIC:
+        dest = mdir / (title.replace(" ", "_") + ".mp3")
+        try:
+            download(url, dest)
+            credits[dest.name] = (f'Music: "{title}" by Kevin MacLeod (incompetech.com), '
+                                  "licensed under Creative Commons: By Attribution 4.0")
+            log(f"music ready: {title}")
+        except Exception as e:
+            log(f"::warning::music {title} unavailable ({e})")
+            dest.unlink(missing_ok=True)
+    if credits:
+        save_json(mdir / "credits.json", credits)
+
+
 def frame_from(url, tmp):
     src = download(url, Path(tmp) / (str(abs(hash(url))) + ".mp4"))
     out = Path(tmp) / (src.stem + ".jpg")
@@ -99,6 +124,8 @@ def main(ep_id):
     spans = line_spans(ep["lines"], words)
 
     make_sfx()
+    if not list((ROOT / 'assets' / 'music').glob('*.mp3')):
+        get_music()
 
     plan = {"lines": [], "candidates": {}}
     with tempfile.TemporaryDirectory() as tmp:
@@ -107,7 +134,7 @@ def main(ep_id):
                                   "shots": [f"L{li}S{si}" for si in range(len(line["shots"]))]})
             for si, query in enumerate(line["shots"]):
                 sid = f"L{li}S{si}"
-                cands = footage.search(query)
+                cands = footage.search(query, n=9)
                 plan["candidates"][sid] = {"query": query, "items": cands}
                 log(f"{sid} '{query}': {len(cands)} candidates")
                 if cands:
