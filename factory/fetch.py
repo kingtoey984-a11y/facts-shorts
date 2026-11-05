@@ -86,6 +86,7 @@ def contact_sheet(shot_id, query, cands, out_path, tmp):
 
 
 def main(ep_id):
+    env("PIXABAY_API_KEY")  # fail before spending ElevenLabs credits
     ep = load_json(ROOT / "episodes" / f"{ep_id}.json")
     wd = episode_dir(ep_id)
     (wd / "sheets").mkdir(parents=True, exist_ok=True)

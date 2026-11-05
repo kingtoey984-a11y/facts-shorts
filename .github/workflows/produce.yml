@@ -57,7 +57,7 @@ jobs:
         run: |
           git config user.name "facts-shorts-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add -A work clips assets/sfx assets/fonts 2>/dev/null || true
+          for d in work clips assets/sfx assets/fonts; do [ -e "$d" ] && git add -A "$d"; done
           if git diff --cached --quiet; then echo "nothing to save"; exit 0; fi
           git commit -q -m "${{ steps.job.outputs.stage }} ${{ steps.job.outputs.episode }} [bot]"
           for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
