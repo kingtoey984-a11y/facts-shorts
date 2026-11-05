@@ -1,0 +1,1350 @@
+{
+  "lines": [
+    {
+      "label": "too close ⚡",
+      "dur": 5.0,
+      "shots": [
+        "L0S0",
+        "L0S1"
+      ]
+    },
+    {
+      "label": "rogue wave 🌊",
+      "dur": 5.0,
+      "shots": [
+        "L1S0",
+        "L1S1"
+      ]
+    },
+    {
+      "label": "firestorm 🔥",
+      "dur": 5.0,
+      "shots": [
+        "L2S0",
+        "L2S1"
+      ]
+    },
+    {
+      "label": "tornado 🌪️",
+      "dur": 5.0,
+      "shots": [
+        "L3S0",
+        "L3S1"
+      ]
+    },
+    {
+      "label": "avalanche 🏔️",
+      "dur": 5.0,
+      "shots": [
+        "L4S0",
+        "L4S1"
+      ]
+    },
+    {
+      "label": "lava 🌋",
+      "dur": 5.0,
+      "shots": [
+        "L5S0",
+        "L5S1"
+      ]
+    }
+  ],
+  "candidates": {
+    "L0S0": {
+      "query": "lightning strike",
+      "items": [
+        {
+          "source": "pixabay",
+          "id": 283428,
+          "page": "https://pixabay.com/videos/id-283428/",
+          "tags": "thunderclouds, thunderstorm, clouds, lightning strike, lightning, storm, nature",
+          "duration": 56,
+          "url": "https://cdn.pixabay.com/video/2025/06/03/283428_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2025/06/03/283428_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2025/06/03/283428_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 283426,
+          "page": "https://pixabay.com/videos/id-283426/",
+          "tags": "thunderclouds, thunderstorm, clouds, lightning strike, lightning, storm, nature",
+          "duration": 13,
+          "url": "https://cdn.pixabay.com/video/2025/06/03/283426_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2025/06/03/283426_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2025/06/03/283426_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 31342,
+          "page": "https://pixabay.com/videos/id-31342/",
+          "tags": "flashes, mountains, thunderstorm, rain, storm, alps, weather, lightning, clouds, lightning strike, landscape, nature, mountain landscape",
+          "duration": 32,
+          "url": "https://cdn.pixabay.com/video/2020/01/17/31342-385863216_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2020/01/17/31342-385863216_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2020/01/17/31342-385863216_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 125192,
+          "page": "https://pixabay.com/videos/id-125192/",
+          "tags": "thunderstorm, flashes, storm, clouds, night sky, thunder, weather, thunderclouds, cloudburst, lightning strike",
+          "duration": 37,
+          "url": "https://cdn.pixabay.com/video/2022/07/23/125192-732837222_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2022/07/23/125192-732837222_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2022/07/23/125192-732837222_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 94416,
+          "page": "https://pixabay.com/videos/id-94416/",
+          "tags": "palm tree, rain, thunder, wind, lightning, storm, clouds, dark clouds, downpour, lightning strikes",
+          "duration": 31,
+          "url": "https://cdn.pixabay.com/video/2021/11/03/94416-644694075_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2021/11/03/94416-644694075_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2021/11/03/94416-644694075_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 75016,
+          "page": "https://pixabay.com/videos/id-75016/",
+          "tags": "thunder, storm, lightning, night, lightning storm, electricity, weather, sky, rain, energy, bolt, power, strike",
+          "duration": 12,
+          "url": "https://cdn.pixabay.com/video/2021/05/23/75016-554074776_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2021/05/23/75016-554074776_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2021/05/23/75016-554074776_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 28067,
+          "page": "https://pixabay.com/videos/id-28067/",
+          "tags": "lightning, storm, thunderstorm, weather, thunder, nature, electricity, energy, flash, power, dramatic, bolt, dangerous, thunderbolt, charge, powerful, strike, live wallpaper",
+          "duration": 9,
+          "url": "https://cdn.pixabay.com/video/2019/10/19/28067-367411324_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2019/10/19/28067-367411324_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2019/10/19/28067-367411324_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 3127,
+          "page": "https://pixabay.com/videos/id-3127/",
+          "tags": "thunderstorm, lightning, clouds, thunder, storm, lightning storm, weather, bolt, dark, light, electricity, lightning bolt, strike, power, danger, energy, nature, dramatic, blue, climate, electrical, storm clouds, 165169559",
+          "duration": 7,
+          "url": "https://cdn.pixabay.com/video/2016/05/12/3127-166335864_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2016/05/12/3127-166335864_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2016/05/12/3127-166335864_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 3128,
+          "page": "https://pixabay.com/videos/id-3128/",
+          "tags": "thunderstorm, lightning, clouds, thunder, storm, lightning storm, weather, bolt, dark, light, electricity, lightning bolt, strike, power, danger, energy, nature, dramatic, blue, climate, electrical, storm clouds, 165366988",
+          "duration": 7,
+          "url": "https://cdn.pixabay.com/video/2016/05/12/3128-166335870_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2016/05/12/3128-166335870_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2016/05/12/3128-166335870_large.jpg"
+        }
+      ]
+    },
+    "L0S1": {
+      "query": "lightning storm night",
+      "items": [
+        {
+          "source": "pixabay",
+          "id": 16160,
+          "page": "https://pixabay.com/videos/id-16160/",
+          "tags": "storm, ocean, sky, rain, the waves, wind, dark clouds, rolling sea, anger, a strong wind, clouds, sea, night, darkness, rainy, cloudy, water, lightning",
+          "duration": 40,
+          "url": "https://cdn.pixabay.com/video/2018/05/11/16160-269534741_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2018/05/11/16160-269534741_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2018/05/11/16160-269534741_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 305,
+          "page": "https://pixabay.com/videos/id-305/",
+          "tags": "rain, thunderstorm, lightning, clouds, storm, electricity, beautiful wallpaper, bad weather, background, blue, night, dark, black, ghostly, spooky, mystery, tough, rainy, stormy, wind, atmosphere",
+          "duration": 15,
+          "url": "https://cdn.pixabay.com/video/2015/08/11/305-135918495_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2015/08/11/305-135918495_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2015/08/11/305-135918495_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 304,
+          "page": "https://pixabay.com/videos/id-304/",
+          "tags": "thunderstorm, lightning, clouds, storm, bad weather, rain, background, blue, night, dark, black, ghostly, spooky, mystery, tough, rainy, beautiful wallpaper, stormy, wind, atmosphere",
+          "duration": 15,
+          "url": "https://cdn.pixabay.com/video/2015/08/11/304-135918292_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2015/08/11/304-135918292_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2015/08/11/304-135918292_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 120483,
+          "page": "https://pixabay.com/videos/id-120483/",
+          "tags": "bed, bedroom, sleep, city, storm, rain, lightning, night, stormy, thunderstorm",
+          "duration": 25,
+          "url": "https://cdn.pixabay.com/video/2022/06/15/120483-720880625_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2022/06/15/120483-720880625_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2022/06/15/120483-720880625_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 120382,
+          "page": "https://pixabay.com/videos/id-120382/",
+          "tags": "storm, rain, city, night, cyberpunk, thunderstorm, lightning, downpour, river, japan",
+          "duration": 25,
+          "url": "https://cdn.pixabay.com/video/2022/06/14/120382-720505197_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2022/06/14/120382-720505197_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2022/06/14/120382-720505197_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 283737,
+          "page": "https://pixabay.com/videos/id-283737/",
+          "tags": "weather, flashes, sheet lightning, heaven, night sky, clouds, storm",
+          "duration": 53,
+          "url": "https://cdn.pixabay.com/video/2025/06/05/283737_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2025/06/05/283737_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2025/06/05/283737_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 209344,
+          "page": "https://pixabay.com/videos/id-209344/",
+          "tags": "space, cosmic, galaxy, nebula, universe, clouds, cosmos, astronomy, stars, spiritual, starlight, moonlight, aura, energy, electric, storm, night, sky, constellation, milkyway, lightning, heaven",
+          "duration": 32,
+          "url": "https://cdn.pixabay.com/video/2024/04/24/209344_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2024/04/24/209344_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2024/04/24/209344_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 207366,
+          "page": "https://pixabay.com/videos/id-207366/",
+          "tags": "space, stars, galaxy, nebula, aura, energy, universe, cosmic, cosmos, astronomy, starlight, fireworks, night, sky, glow, storm, lightning, comet, meteor, asteroid, solar, atmosphere, clouds",
+          "duration": 29,
+          "url": "https://cdn.pixabay.com/video/2024/04/08/207366_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2024/04/08/207366_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2024/04/08/207366_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 207364,
+          "page": "https://pixabay.com/videos/id-207364/",
+          "tags": "space, stars, galaxy, nebula, universe, neon, aura, cosmic, cosmos, astronomy, starlight, dream, fireworks, night, sky, sparkle, glitter, glow, storm, lightning, atmosphere, fantasy",
+          "duration": 28,
+          "url": "https://cdn.pixabay.com/video/2024/04/08/207364_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2024/04/08/207364_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2024/04/08/207364_large.jpg"
+        }
+      ]
+    },
+    "L1S0": {
+      "query": "huge waves storm",
+      "items": [
+        {
+          "source": "pixabay",
+          "id": 350195,
+          "page": "https://pixabay.com/videos/id-350195/",
+          "tags": "wave, storm, ocean, sea, shore, stormy, splash, seascape, power, rock, huge, spray, powerful, breaking, rough, crashing, splashing, energy, wind, crash, force, break, big, high, typhoon",
+          "duration": 48,
+          "url": "https://cdn.pixabay.com/video/2026/05/03/350195_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2026/05/03/350195_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2026/05/03/350195_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 230316,
+          "page": "https://pixabay.com/videos/id-230316/",
+          "tags": "sea, splashing, rough, breaking wave, storm, spray, crash, coastline, spraying, close-up, flowing, breaking, turbulence, sea foam, rock - object, violent, impact, coastal feature, huge",
+          "duration": 23,
+          "url": "https://cdn.pixabay.com/video/2024/09/08/230316_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2024/09/08/230316_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2024/09/08/230316_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 312086,
+          "page": "https://pixabay.com/videos/id-312086/",
+          "tags": "wave, ocean, water, sea, shore, huge, storm, beach, splash, powerful, coast, stormy, crashing, hurricane, coastline, big, hitting, spray, splashing, hit, force, rock",
+          "duration": 27,
+          "url": "https://cdn.pixabay.com/video/2025/10/26/312086_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2025/10/26/312086_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2025/10/26/312086_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 201766,
+          "page": "https://pixabay.com/videos/id-201766/",
+          "tags": "ocean, sea, waves, crash, coast, coastline, seashore, beach, water, storm, sky, foam",
+          "duration": 18,
+          "url": "https://cdn.pixabay.com/video/2024/02/24/201766-916357972_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2024/02/24/201766-916357972_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2024/02/24/201766-916357972_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 353078,
+          "page": "https://pixabay.com/videos/id-353078/",
+          "tags": "wave, rock, splash, sunset, sea, shore, seascape, coastline, splashing, coast, beach, spray, ocean, rocky, stone, crash, dramatic, sunrise, crashing, shoreline, rolling, stormy, storm, power",
+          "duration": 16,
+          "url": "https://cdn.pixabay.com/video/2026/05/16/353078_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2026/05/16/353078_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2026/05/16/353078_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 191093,
+          "page": "https://pixabay.com/videos/id-191093/",
+          "tags": "sea, storm, ocean, beach, pier, wave, sky, rain, water, nature",
+          "duration": 22,
+          "url": "https://cdn.pixabay.com/video/2023/11/27/191093-889267403_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2023/11/27/191093-889267403_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2023/11/27/191093-889267403_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 71122,
+          "page": "https://pixabay.com/videos/id-71122/",
+          "tags": "waves, sea, ocean, storm, water, tide, beautiful wallpaper, horizon, loop, seamless, background, nature, 4k, wallpaper, live wallpaper, earth day",
+          "duration": 19,
+          "url": "https://cdn.pixabay.com/video/2021/04/15/71122-537102350_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2021/04/15/71122-537102350_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2021/04/15/71122-537102350_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 311,
+          "page": "https://pixabay.com/videos/id-311/",
+          "tags": "ship, ocean, sea, storm, pirates, sailing, waves, thunderstorm, lightning, boat, dangerous, force of nature, elements, nature, 135731672",
+          "duration": 33,
+          "url": "https://cdn.pixabay.com/video/2015/08/11/311-135956325_large.mp4",
+          "width": 2500,
+          "height": 1200,
+          "preview": "https://cdn.pixabay.com/video/2015/08/11/311-135956325_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2015/08/11/311-135956325_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 30791,
+          "page": "https://pixabay.com/videos/id-30791/",
+          "tags": "man, person, umbrella, wave, storm, human",
+          "duration": 19,
+          "url": "https://cdn.pixabay.com/video/2020/01/02/30791-382770774_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2020/01/02/30791-382770774_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2020/01/02/30791-382770774_large.jpg"
+        }
+      ]
+    },
+    "L1S1": {
+      "query": "big wave crash",
+      "items": [
+        {
+          "source": "pixabay",
+          "id": 325641,
+          "page": "https://pixabay.com/videos/id-325641/",
+          "tags": "wave, water, splash, ocean, sea, big, beach, splashing, crash, white, spray, coast, power, energy, stormy, breaking, rough, shore, rock, seascape, breaker, powerful, hurricane",
+          "duration": 22,
+          "url": "https://cdn.pixabay.com/video/2026/01/02/325641_large.mp4",
+          "width": 1080,
+          "height": 1920,
+          "preview": "https://cdn.pixabay.com/video/2026/01/02/325641_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2026/01/02/325641_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 350195,
+          "page": "https://pixabay.com/videos/id-350195/",
+          "tags": "wave, storm, ocean, sea, shore, stormy, splash, seascape, power, rock, huge, spray, powerful, breaking, rough, crashing, splashing, energy, wind, crash, force, break, big, high, typhoon",
+          "duration": 48,
+          "url": "https://cdn.pixabay.com/video/2026/05/03/350195_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2026/05/03/350195_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2026/05/03/350195_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 312086,
+          "page": "https://pixabay.com/videos/id-312086/",
+          "tags": "wave, ocean, water, sea, shore, huge, storm, beach, splash, powerful, coast, stormy, crashing, hurricane, coastline, big, hitting, spray, splashing, hit, force, rock",
+          "duration": 27,
+          "url": "https://cdn.pixabay.com/video/2025/10/26/312086_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2025/10/26/312086_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2025/10/26/312086_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 340412,
+          "page": "https://pixabay.com/videos/id-340412/",
+          "tags": "dangerous waves, sea waves, strong surf, windy sea, rough ocean, ocean storm, big surf, crashing ocean, coastal storm, seaside waves, wild ocean, water movement, nature power, dramatic sea, shoreline waves, coastal weather, ocean nature, rough coastline",
+          "duration": 21,
+          "url": "https://cdn.pixabay.com/video/2026/03/16/340412_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2026/03/16/340412_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2026/03/16/340412_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 353078,
+          "page": "https://pixabay.com/videos/id-353078/",
+          "tags": "wave, rock, splash, sunset, sea, shore, seascape, coastline, splashing, coast, beach, spray, ocean, rocky, stone, crash, dramatic, sunrise, crashing, shoreline, rolling, stormy, storm, power",
+          "duration": 16,
+          "url": "https://cdn.pixabay.com/video/2026/05/16/353078_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2026/05/16/353078_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2026/05/16/353078_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 201766,
+          "page": "https://pixabay.com/videos/id-201766/",
+          "tags": "ocean, sea, waves, crash, coast, coastline, seashore, beach, water, storm, sky, foam",
+          "duration": 18,
+          "url": "https://cdn.pixabay.com/video/2024/02/24/201766-916357972_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2024/02/24/201766-916357972_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2024/02/24/201766-916357972_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 348904,
+          "page": "https://pixabay.com/videos/id-348904/",
+          "tags": "wave, rock, horizon, ocean, sun, beach, sea, shore, coast, coastline, stone, seascape, sunset, peaceful, foam, coastal, cliff, shoreline, island, splash, rock texture, crash, remote, textured",
+          "duration": 42,
+          "url": "https://cdn.pixabay.com/video/2026/04/25/348904_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2026/04/25/348904_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2026/04/25/348904_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 214592,
+          "page": "https://pixabay.com/videos/id-214592/",
+          "tags": "waves, breaking, blue, aqua, force, ocean, sea, coast, water, coastal, seaside, power, powerful, spray, foam, crash, crashing, surf, surfing, nature",
+          "duration": 28,
+          "url": "https://cdn.pixabay.com/video/2024/05/31/214592_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2024/05/31/214592_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2024/05/31/214592_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 182970,
+          "page": "https://pixabay.com/videos/id-182970/",
+          "tags": "sea, waves, water, crash, beach, shore, splash, spray, coastline, wind, coast, rocks, stone, rough, foam, coastal, slow motion",
+          "duration": 32,
+          "url": "https://cdn.pixabay.com/video/2023/09/30/182970-869947284_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2023/09/30/182970-869947284_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2023/09/30/182970-869947284_large.jpg"
+        }
+      ]
+    },
+    "L2S0": {
+      "query": "wildfire",
+      "items": [
+        {
+          "source": "pixabay",
+          "id": 13114,
+          "page": "https://pixabay.com/videos/id-13114/",
+          "tags": "okanagan, wildfire, recovery, mountain, winter, aerial, solitude",
+          "duration": 20,
+          "url": "https://cdn.pixabay.com/video/2017/11/29/13114-245530636_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2017/11/29/13114-245530636_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2017/11/29/13114-245530636_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 130076,
+          "page": "https://pixabay.com/videos/id-130076/",
+          "tags": "fire, burn, smoke, wildfire, scary, horror, burning, global warming",
+          "duration": 22,
+          "url": "https://cdn.pixabay.com/video/2022/09/03/130076-746154338_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2022/09/03/130076-746154338_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2022/09/03/130076-746154338_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 44186,
+          "page": "https://pixabay.com/videos/id-44186/",
+          "tags": "fire, forest, fireman, wildfire, smoke, hot, camping, witch, night, burning, trees, heat, destruction, sweden, danger, wood, orange, nature, fantasy, blaze, friends, landscape, flames",
+          "duration": 21,
+          "url": "https://cdn.pixabay.com/video/2020/07/08/44186-438212430_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2020/07/08/44186-438212430_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2020/07/08/44186-438212430_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 44187,
+          "page": "https://pixabay.com/videos/id-44187/",
+          "tags": "fire, forest, destruction, sweden, danger, orange, nature, fantasy, tree, blaze, friends, wildfire, smoke, hot, camping, witch, night, burning, heat, wood, landscape, deer, flames",
+          "duration": 17,
+          "url": "https://cdn.pixabay.com/video/2020/07/08/44187-438212438_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2020/07/08/44187-438212438_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2020/07/08/44187-438212438_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 12205,
+          "page": "https://pixabay.com/videos/id-12205/",
+          "tags": "bonfire, slo-mo, fire, isolated, flame, hot, burn, blaze, heat, flammable, campfire, fiery, flaming, ignite, wildfire, red, energy, danger, blazing, black, inferno, glow, dangerous, smoke, warm, light, orange",
+          "duration": 30,
+          "url": "https://cdn.pixabay.com/video/2017/09/25/12205-246623011_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2017/09/25/12205-246623011_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2017/09/25/12205-246623011_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 187105,
+          "page": "https://pixabay.com/videos/id-187105/",
+          "tags": "flames, fire, wildfire, heat, gas, fuel, overlay, burn, burning, fireplace, carbon",
+          "duration": 30,
+          "url": "https://cdn.pixabay.com/video/2023/10/30/187105-879640361_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2023/10/30/187105-879640361_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2023/10/30/187105-879640361_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 353278,
+          "page": "https://pixabay.com/videos/id-353278/",
+          "tags": "ai generated, volcano, eruption, nature, lava, tropical, jungle, ocean, fire, smoke, ash, cinematic, island, steam, magma, burning, coast, landscape, dramatic, heat, wildfire, planet",
+          "duration": 30,
+          "url": "https://cdn.pixabay.com/video/2026/05/17/353278_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2026/05/17/353278_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2026/05/17/353278_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 50379,
+          "page": "https://pixabay.com/videos/id-50379/",
+          "tags": "flames, fire, wildfire, heat, blaze, burning, hot, wood, burn",
+          "duration": 10,
+          "url": "https://cdn.pixabay.com/video/2020/09/20/50379-460412803_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2020/09/20/50379-460412803_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2020/09/20/50379-460412803_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 197995,
+          "page": "https://pixabay.com/videos/id-197995/",
+          "tags": "sky, clouds, forest fire, fire, wildfire, smoke, drone, aerial, nature, timelapse, time-lapse, time lapse",
+          "duration": 9,
+          "url": "https://cdn.pixabay.com/video/2024/01/24/197995-906226502_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2024/01/24/197995-906226502_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2024/01/24/197995-906226502_large.jpg"
+        }
+      ]
+    },
+    "L2S1": {
+      "query": "forest fire night",
+      "items": [
+        {
+          "source": "pixabay",
+          "id": 168893,
+          "page": "https://pixabay.com/videos/id-168893/",
+          "tags": "fire, flame, forest, nature, night",
+          "duration": 17,
+          "url": "https://cdn.pixabay.com/video/2023/06/26/168893-839912970_large.mp4",
+          "width": 1080,
+          "height": 1920,
+          "preview": "https://cdn.pixabay.com/video/2023/06/26/168893-839912970_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2023/06/26/168893-839912970_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 291821,
+          "page": "https://pixabay.com/videos/id-291821/",
+          "tags": "cozy bedroom, nighttime, ambient lighting, peaceful night, forest at night, city lights view, large windows, flickering fire, snowfall at night, snowstorm outside, rainy night, rain on window, tranquil space, serene interior, elegant decor, rustic charm, cabin vibes, dreamy setting, indoor comfort, luxury retreat, calming environment, night ambience, ambient bedroom, peaceful sleep space, ai generated",
+          "duration": 24,
+          "url": "https://cdn.pixabay.com/video/2025/07/17/291821_large.mp4",
+          "width": 2160,
+          "height": 2864,
+          "preview": "https://cdn.pixabay.com/video/2025/07/17/291821_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2025/07/17/291821_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 236711,
+          "page": "https://pixabay.com/videos/id-236711/",
+          "tags": "fire, sparks, forest, night, dark, heat, glare, flame, camp, mountain, trip, holiday, spark, wood, coal, nature, beautiful wallpaper, background",
+          "duration": 32,
+          "url": "https://cdn.pixabay.com/video/2024/10/17/236711_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2024/10/17/236711_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2024/10/17/236711_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 187387,
+          "page": "https://pixabay.com/videos/id-187387/",
+          "tags": "tent, camping, fire, night, forest, lake, cozy, nature",
+          "duration": 20,
+          "url": "https://cdn.pixabay.com/video/2023/11/01/187387-880363230_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2023/11/01/187387-880363230_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2023/11/01/187387-880363230_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 44187,
+          "page": "https://pixabay.com/videos/id-44187/",
+          "tags": "fire, forest, destruction, sweden, danger, orange, nature, fantasy, tree, blaze, friends, wildfire, smoke, hot, camping, witch, night, burning, heat, wood, landscape, deer, flames",
+          "duration": 17,
+          "url": "https://cdn.pixabay.com/video/2020/07/08/44187-438212438_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2020/07/08/44187-438212438_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2020/07/08/44187-438212438_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 44186,
+          "page": "https://pixabay.com/videos/id-44186/",
+          "tags": "fire, forest, fireman, wildfire, smoke, hot, camping, witch, night, burning, trees, heat, destruction, sweden, danger, wood, orange, nature, fantasy, blaze, friends, landscape, flames",
+          "duration": 21,
+          "url": "https://cdn.pixabay.com/video/2020/07/08/44186-438212430_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2020/07/08/44186-438212430_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2020/07/08/44186-438212430_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 109837,
+          "page": "https://pixabay.com/videos/id-109837/",
+          "tags": "witch, magic, forest, night, wicca, fantasy, mystic, fire, colors, background",
+          "duration": 30,
+          "url": "https://cdn.pixabay.com/video/2022/03/06/109837-685694751_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2022/03/06/109837-685694751_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2022/03/06/109837-685694751_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 61214,
+          "page": "https://pixabay.com/videos/id-61214/",
+          "tags": "fire, flame, bonfire, night, crackle, forest, coals, firewood",
+          "duration": 60,
+          "url": "https://cdn.pixabay.com/video/2021/01/05/61214-497862984_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2021/01/05/61214-497862984_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2021/01/05/61214-497862984_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 250077,
+          "page": "https://pixabay.com/videos/id-250077/",
+          "tags": "ai generated, magic, sword, armor, hood, light, fire, stars, warrior, sorcerer, elf, faerie, forest, night sky, magic circle, adventure, knight, silence, shine, castle, legend, spell, leather, scroll, fantasy",
+          "duration": 10,
+          "url": "https://cdn.pixabay.com/video/2025/01/02/250077_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2025/01/02/250077_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2025/01/02/250077_large.jpg"
+        }
+      ]
+    },
+    "L3S0": {
+      "query": "tornado",
+      "items": [
+        {
+          "source": "pixabay",
+          "id": 22070,
+          "page": "https://pixabay.com/videos/id-22070/",
+          "tags": "tornado, storm, field, twister, funnel, weather, extreme weather, storm chasing, nature, mother nature, destruction, thunderstorm, hurricane, typhoon, natural disaster, clouds, wheat field, outdoor, live wallpaper",
+          "duration": 20,
+          "url": "https://cdn.pixabay.com/video/2019/03/18/22070-325253460_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2019/03/18/22070-325253460_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2019/03/18/22070-325253460_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 7619,
+          "page": "https://pixabay.com/videos/id-7619/",
+          "tags": "tornado, storm, wind, power, hurricane, weather, disaster, cyclone, damage, destruction, twister, thunderstorm, dangerous, environment, nature",
+          "duration": 15,
+          "url": "https://cdn.pixabay.com/video/2017/02/01/7619-202267654_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2017/02/01/7619-202267654_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2017/02/01/7619-202267654_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 17680,
+          "page": "https://pixabay.com/videos/id-17680/",
+          "tags": "eye, tunnel, tornado, scary, mystical, mysterious, abstract, surreal",
+          "duration": 32,
+          "url": "https://cdn.pixabay.com/video/2018/08/06/17680-283838666_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2018/08/06/17680-283838666_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2018/08/06/17680-283838666_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 17679,
+          "page": "https://pixabay.com/videos/id-17679/",
+          "tags": "eye, tunnel, tornado, scary, mystical, mysterious, abstract, surreal",
+          "duration": 31,
+          "url": "https://cdn.pixabay.com/video/2018/08/06/17679-283838690_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2018/08/06/17679-283838690_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2018/08/06/17679-283838690_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 49184,
+          "page": "https://pixabay.com/videos/id-49184/",
+          "tags": "vortex, twirl, storm, electric, lightning, whirlpool, spiral, cyclone, nature, tornado, hurricane, weather, twister, wind, disaster, climate, rotation, meteorology, air",
+          "duration": 14,
+          "url": "https://cdn.pixabay.com/video/2020/09/05/49184-459186499_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2020/09/05/49184-459186499_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2020/09/05/49184-459186499_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 26566,
+          "page": "https://pixabay.com/videos/id-26566/",
+          "tags": "tornado, tree, house, hurricane, wind, disaster, weather",
+          "duration": 16,
+          "url": "https://cdn.pixabay.com/video/2019/09/04/26566-358041233_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2019/09/04/26566-358041233_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2019/09/04/26566-358041233_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 198839,
+          "page": "https://pixabay.com/videos/id-198839/",
+          "tags": "sky, clouds, lightning, storm, thunderstorm, thunder, rain, weather, dark, night, lightening, tornado, nature, landscape",
+          "duration": 12,
+          "url": "https://cdn.pixabay.com/video/2024/02/01/198839-908874657_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2024/02/01/198839-908874657_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2024/02/01/198839-908874657_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 7246,
+          "page": "https://pixabay.com/videos/id-7246/",
+          "tags": "hurricane, storm, tornado, lightning, cyclone, thunderstorm, disaster, wind, heat, force, fire, clouds, smoke, 192123545",
+          "duration": 10,
+          "url": "https://cdn.pixabay.com/video/2017/01/12/7246-199191023_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2017/01/12/7246-199191023_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2017/01/12/7246-199191023_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 7245,
+          "page": "https://pixabay.com/videos/id-7245/",
+          "tags": "hurricane, storm, tornado, lightning, cyclone, thunderstorm, disaster, wind, heat, force, clouds, smoke, 192125242",
+          "duration": 9,
+          "url": "https://cdn.pixabay.com/video/2017/01/12/7245-199191029_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2017/01/12/7245-199191029_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2017/01/12/7245-199191029_large.jpg"
+        }
+      ]
+    },
+    "L3S1": {
+      "query": "supercell storm",
+      "items": [
+        {
+          "source": "pixabay",
+          "id": 317234,
+          "page": "https://pixabay.com/videos/id-317234/",
+          "tags": "twister, tornado, storm, sunset, clouds, wind, supercell, cyclone, nature, danger, epic, weather, sky, rotation, sand, ai generated",
+          "duration": 19,
+          "url": "https://cdn.pixabay.com/video/2025/11/20/317234_large.mp4",
+          "width": 2160,
+          "height": 3840,
+          "preview": "https://cdn.pixabay.com/video/2025/11/20/317234_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2025/11/20/317234_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 299817,
+          "page": "https://pixabay.com/videos/id-299817/",
+          "tags": "ai generated, storm, supercell, tornado, megastorm, ocean, sea, clouds, hurricane, cyclone, typhoon, weather, sky, thunderstorm, atmosphere, apocalypse, disaster, climate, nature, powerful, wild, danger",
+          "duration": 20,
+          "url": "https://cdn.pixabay.com/video/2025/08/26/299817_large.mp4",
+          "width": 2160,
+          "height": 3889,
+          "preview": "https://cdn.pixabay.com/video/2025/08/26/299817_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2025/08/26/299817_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 298396,
+          "page": "https://pixabay.com/videos/id-298396/",
+          "tags": "tornado, storm, supercell, clouds, ocean, sea, hurricane, cyclone, megastorm, thunderstorm, lightning, sky, apocalypse, weather, nature, dramatic, whirlwind, atmosphere, sunset, epic, formation, cloudscape, mega, ai generated",
+          "duration": 16,
+          "url": "https://cdn.pixabay.com/video/2025/08/19/298396_large.mp4",
+          "width": 2160,
+          "height": 3840,
+          "preview": "https://cdn.pixabay.com/video/2025/08/19/298396_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2025/08/19/298396_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 374643,
+          "page": "https://pixabay.com/videos/id-374643/",
+          "tags": "ai generated, tornado, storm, nature, weather, coast, desert, sea, wind, sand, twister, vortex, cyclone, supercell, climate, waves, dust",
+          "duration": 15,
+          "url": "https://cdn.pixabay.com/video/2026/09/05/374643_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2026/09/05/374643_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2026/09/05/374643_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 363642,
+          "page": "https://pixabay.com/videos/id-363642/",
+          "tags": "tornado, supercell, storm, weather, coast, beach, desert, ocean, sea, clouds, cyclone, tempest, apocalypse, extreme, dramatic, nature, sand, dust, sky, cinematic, climate, ai generated",
+          "duration": 22,
+          "url": "https://cdn.pixabay.com/video/2026/07/12/363642_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2026/07/12/363642_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2026/07/12/363642_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 353736,
+          "page": "https://pixabay.com/videos/id-353736/",
+          "tags": "ai generated, storm, thunderstorm, nature, mammatus, lightning, supercell, clouds, weather, cinematic, sky, rain, sunset, cumulonimbus, shelf cloud, anvil cloud, atmospheric, valley, wall cloud, dramatic",
+          "duration": 26,
+          "url": "https://cdn.pixabay.com/video/2026/05/19/353736_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2026/05/19/353736_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2026/05/19/353736_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 308501,
+          "page": "https://pixabay.com/videos/id-308501/",
+          "tags": "tornado, twister, storm, supercell, funnel cloud, extreme weather, dark skies, rotating clouds, wind storm, natural disaster, dramatic sky, swirling vortex, thunderstorm, atmospheric chaos, severe storm, turbulent weather, ominous clouds, cyclone, weather phenomenon, violent winds, destruction, tempest, emergency, stormy landscape, climate force",
+          "duration": 25,
+          "url": "https://cdn.pixabay.com/video/2025/10/07/308501_large.mp4",
+          "width": 3872,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2025/10/07/308501_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2025/10/07/308501_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 279862,
+          "page": "https://pixabay.com/videos/id-279862/",
+          "tags": "storm, loop, cloud, supercell, atmosphere, desert, vortex, light, dust, energy, nature, cinematic, cloudscape, weather, sunset, wind, motion, skyline, horizon, realism, pulse, vertical, heat, dynamic, epic, ai generated",
+          "duration": 10,
+          "url": "https://cdn.pixabay.com/video/2025/05/17/279862_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2025/05/17/279862_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2025/05/17/279862_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 112957,
+          "page": "https://pixabay.com/videos/id-112957/",
+          "tags": "windmill, turbine, energy, storm clouds",
+          "duration": 10,
+          "url": "https://cdn.pixabay.com/video/2022/04/04/112957-696336342_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2022/04/04/112957-696336342_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2022/04/04/112957-696336342_large.jpg"
+        }
+      ]
+    },
+    "L4S0": {
+      "query": "avalanche",
+      "items": [
+        {
+          "source": "pixabay",
+          "id": 215786,
+          "page": "https://pixabay.com/videos/id-215786/",
+          "tags": "snow, avalanche, mountains, winter, nature, vfx, simulation, alpha channel, ceiling, collapse, destruction, apocalypse, chaos, house, fog, smoke, rain",
+          "duration": 25,
+          "url": "https://cdn.pixabay.com/video/2024/06/08/215786_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2024/06/08/215786_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2024/06/08/215786_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 20582,
+          "page": "https://pixabay.com/videos/id-20582/",
+          "tags": "avalanche, snow landslide, slip, snow, winter, snow slope",
+          "duration": 18,
+          "url": "https://cdn.pixabay.com/video/2019/01/09/20582-311449645_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2019/01/09/20582-311449645_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2019/01/09/20582-311449645_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 20579,
+          "page": "https://pixabay.com/videos/id-20579/",
+          "tags": "high altitude mountaineering, steep wall, climber, high mountains, avalanche danger, snow cornices, alps, rockclimbing, steep slope, snow, mountains, mountain",
+          "duration": 13,
+          "url": "https://cdn.pixabay.com/video/2019/01/09/20579-311449636_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2019/01/09/20579-311449636_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2019/01/09/20579-311449636_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 189536,
+          "page": "https://pixabay.com/videos/id-189536/",
+          "tags": "coin, money, avax, avalanche, crypto, altcoin, altcoins, cryptocurrency, blockchain, digital, investment, 3d, loop, logo, bitcoin, exchange, technology",
+          "duration": 19,
+          "url": "https://cdn.pixabay.com/video/2023/11/17/189536-886011287_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2023/11/17/189536-886011287_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2023/11/17/189536-886011287_large.jpg"
+        }
+      ]
+    },
+    "L4S1": {
+      "query": "snow avalanche mountain",
+      "items": [
+        {
+          "source": "pixabay",
+          "id": 215786,
+          "page": "https://pixabay.com/videos/id-215786/",
+          "tags": "snow, avalanche, mountains, winter, nature, vfx, simulation, alpha channel, ceiling, collapse, destruction, apocalypse, chaos, house, fog, smoke, rain",
+          "duration": 25,
+          "url": "https://cdn.pixabay.com/video/2024/06/08/215786_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2024/06/08/215786_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2024/06/08/215786_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 20579,
+          "page": "https://pixabay.com/videos/id-20579/",
+          "tags": "high altitude mountaineering, steep wall, climber, high mountains, avalanche danger, snow cornices, alps, rockclimbing, steep slope, snow, mountains, mountain",
+          "duration": 13,
+          "url": "https://cdn.pixabay.com/video/2019/01/09/20579-311449636_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2019/01/09/20579-311449636_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2019/01/09/20579-311449636_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 277097,
+          "page": "https://pixabay.com/videos/id-277097/",
+          "tags": "mountain, snow, nature, travel, fog, landscape",
+          "duration": 18,
+          "url": "https://cdn.pixabay.com/video/2025/05/06/277097_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2025/05/06/277097_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2025/05/06/277097_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 25477,
+          "page": "https://pixabay.com/videos/id-25477/",
+          "tags": "vosges, france, snow, nature, landscape, mountain, forest, cold, mountains, winter, trees, tree, white, snowy, wintry, ice",
+          "duration": 19,
+          "url": "https://cdn.pixabay.com/video/2019/07/24/25477-350507890_large.mp4",
+          "width": 2562,
+          "height": 1440,
+          "preview": "https://cdn.pixabay.com/video/2019/07/24/25477-350507890_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2019/07/24/25477-350507890_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 305657,
+          "page": "https://pixabay.com/videos/id-305657/",
+          "tags": "mountain, nature, landscape, austria, hiking, italy, alps, switzerland, path, snow, alpine, panorama, peak, sky, clouds",
+          "duration": 14,
+          "url": "https://cdn.pixabay.com/video/2025/09/22/305657_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2025/09/22/305657_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2025/09/22/305657_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 348057,
+          "page": "https://pixabay.com/videos/id-348057/",
+          "tags": "geothermal, iceland, nature, steam, landscape, natural, mountain, waterfall, trees, snow, winter, cold, frost, snowy, frozen, ice, cliffs",
+          "duration": 22,
+          "url": "https://cdn.pixabay.com/video/2026/04/21/348057_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2026/04/21/348057_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2026/04/21/348057_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 240841,
+          "page": "https://pixabay.com/videos/id-240841/",
+          "tags": "pagoda, mountains, japan, japanese, sakura, fuji, snow, asia, flowers, nature, clouds, fog, foliage, fuji japan, fujiyama, fujiyoshida, landmark, movement, mountain, landscape",
+          "duration": 14,
+          "url": "https://cdn.pixabay.com/video/2024/11/11/240841_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2024/11/11/240841_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2024/11/11/240841_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 327388,
+          "page": "https://pixabay.com/videos/id-327388/",
+          "tags": "snow scene, mountain village, heavy snowfall area, traditional house, gassho-zukuri, world cultural heritage, shirakawa-go, japan",
+          "duration": 19,
+          "url": "https://cdn.pixabay.com/video/2026/01/13/327388_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2026/01/13/327388_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2026/01/13/327388_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 205422,
+          "page": "https://pixabay.com/videos/id-205422/",
+          "tags": "sunrise, mountain village, mountains, snow, fog, snow landscape, timelapse",
+          "duration": 21,
+          "url": "https://cdn.pixabay.com/video/2024/03/24/205422-926957395_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2024/03/24/205422-926957395_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2024/03/24/205422-926957395_large.jpg"
+        }
+      ]
+    },
+    "L5S0": {
+      "query": "volcano eruption",
+      "items": [
+        {
+          "source": "pixabay",
+          "id": 152085,
+          "page": "https://pixabay.com/videos/id-152085/",
+          "tags": "volcano, iceland, icelandic, eruption, smoking, fire, lava, glow, drone, nature, pollution",
+          "duration": 15,
+          "url": "https://cdn.pixabay.com/video/2023/02/25/152085-802335503_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2023/02/25/152085-802335503_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2023/02/25/152085-802335503_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 152174,
+          "page": "https://pixabay.com/videos/id-152174/",
+          "tags": "volcano, smoke, fire, heat, flame, burn, geology, volcanology, spatter, splash, iceland, nature, lava, magma, eruption",
+          "duration": 22,
+          "url": "https://cdn.pixabay.com/video/2023/02/25/152174-802335605_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2023/02/25/152174-802335605_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2023/02/25/152174-802335605_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 130156,
+          "page": "https://pixabay.com/videos/id-130156/",
+          "tags": "volcano, eruption, fire, heat, burn, volcanic, iceland, nature, magma, cone, fissure, vent",
+          "duration": 19,
+          "url": "https://cdn.pixabay.com/video/2022/09/04/130156-746395181_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2022/09/04/130156-746395181_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2022/09/04/130156-746395181_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 382760,
+          "page": "https://pixabay.com/videos/id-382760/",
+          "tags": "lightning, eruption, reef, volcano, aerial, island, lava, ash, plume, ocean, lagoon, tropical, explosion, electric, thunder, disaster, nature, geology, sunlight, drone, ai generated",
+          "duration": 21,
+          "url": "https://cdn.pixabay.com/video/2026/10/14/382760_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2026/10/14/382760_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2026/10/14/382760_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 378988,
+          "page": "https://pixabay.com/videos/id-378988/",
+          "tags": "lava, volcano, fire, iceland, nature, landscape, smoke, hot, heat, fissure, geology, volcanology, eruption, crater, magma, hazard, debris, icelandic",
+          "duration": 16,
+          "url": "https://cdn.pixabay.com/video/2026/09/26/378988_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2026/09/26/378988_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2026/09/26/378988_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 211700,
+          "page": "https://pixabay.com/videos/id-211700/",
+          "tags": "volcano, crater, spatter cone, eruption, iceland, fire, hot, flaming, smelted, magma, lava, nature, smoke, underpressure, gas, energy, geology, volcanology",
+          "duration": 17,
+          "url": "https://cdn.pixabay.com/video/2024/05/12/211700_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2024/05/12/211700_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2024/05/12/211700_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 237116,
+          "page": "https://pixabay.com/videos/id-237116/",
+          "tags": "valley, volcano, crater, etna, aerial view, eruption, journey, cloudscape, drone, landmark, italy, sicily, scenery, majestic, aerial, geology, sky, lava",
+          "duration": 19,
+          "url": "https://cdn.pixabay.com/video/2024/10/19/237116_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2024/10/19/237116_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2024/10/19/237116_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 219833,
+          "page": "https://pixabay.com/videos/id-219833/",
+          "tags": "lava, volcano, lava flow, fire, crater, smoke, flow, eruption eruption, magma, aerial, active volcano, glow, geldingadalir, nature, hot, glowing, drone, ash, volcanic eruption, mountain, iceland volcano, explosion",
+          "duration": 15,
+          "url": "https://cdn.pixabay.com/video/2024/07/07/219833_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2024/07/07/219833_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2024/07/07/219833_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 1020,
+          "page": "https://pixabay.com/videos/id-1020/",
+          "tags": "spouter, gusher, hot, attraction, water, boiling, breakout, volcano, volcanism, crater, volcanic, energy, erupting, eruption, explosion, fountain, geology, fume, geothermic, geothermal, gushing, geyser, blowout, heat, natural, smoke, splash, spray, steam, pressure, nature",
+          "duration": 18,
+          "url": "https://cdn.pixabay.com/video/2015/10/16/1020-142621244_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2015/10/16/1020-142621244_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2015/10/16/1020-142621244_large.jpg"
+        }
+      ]
+    },
+    "L5S1": {
+      "query": "lava flow",
+      "items": [
+        {
+          "source": "pixabay",
+          "id": 369428,
+          "page": "https://pixabay.com/videos/id-369428/",
+          "tags": "ai generated, volcano, eruption, lava, lava flow, ocean, volcanic eruption, tropical, steam, smoke, magma, volcanic, ash, ash cloud, beach, jungle, coast, sea, nature, geology, natural disaster, extreme nature, aerial",
+          "duration": 22,
+          "url": "https://cdn.pixabay.com/video/2026/08/08/369428_large.mp4",
+          "width": 2160,
+          "height": 3840,
+          "preview": "https://cdn.pixabay.com/video/2026/08/08/369428_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2026/08/08/369428_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 384746,
+          "page": "https://pixabay.com/videos/id-384746/",
+          "tags": "volcano, lava, eruption, ocean, beach, explosion, steam, ash cloud, lava flow, tropical, island, sunset, storm clouds, natural disaster, geology, documentary, news, cinematic, nature, primal, fury, inferno, apocalypse, power, rebirth, ai generated",
+          "duration": 20,
+          "url": "https://cdn.pixabay.com/video/2026/10/23/384746_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2026/10/23/384746_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2026/10/23/384746_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 219833,
+          "page": "https://pixabay.com/videos/id-219833/",
+          "tags": "lava, volcano, lava flow, fire, crater, smoke, flow, eruption eruption, magma, aerial, active volcano, glow, geldingadalir, nature, hot, glowing, drone, ash, volcanic eruption, mountain, iceland volcano, explosion",
+          "duration": 15,
+          "url": "https://cdn.pixabay.com/video/2024/07/07/219833_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2024/07/07/219833_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2024/07/07/219833_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 234079,
+          "page": "https://pixabay.com/videos/id-234079/",
+          "tags": "volcano, lava, lava flow, fire, crater, smoke, flow, eruption eruption, travel, magma, aerial, active volcano, volcanic, nature, glowing, eruption, mountain, landscape, explosion, iceland",
+          "duration": 15,
+          "url": "https://cdn.pixabay.com/video/2024/10/01/234079_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2024/10/01/234079_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2024/10/01/234079_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 234084,
+          "page": "https://pixabay.com/videos/id-234084/",
+          "tags": "volcano, lava, lava flow, fire, crater, smoke, icelandic, flow, eruption eruption, travel, magma, iceland, aerial, active volcano, geldingadalir, volcanic, nature, glowing, eruption, mountain, landscape, explosion",
+          "duration": 27,
+          "url": "https://cdn.pixabay.com/video/2024/10/01/234084_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2024/10/01/234084_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2024/10/01/234084_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 200214,
+          "page": "https://pixabay.com/videos/id-200214/",
+          "tags": "volcano, sea, active volcano, danger, dangerous, erupting, eruption, explosion, fire, tailwater, runoff, landscape, lava, flow lava, magma, mountain, natural, nature, night, smoke, volcanic, screensaver",
+          "duration": 32,
+          "url": "https://cdn.pixabay.com/video/2024/02/11/200214-912119524_large.mp4",
+          "width": 1920,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2024/02/11/200214-912119524_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2024/02/11/200214-912119524_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 31131,
+          "page": "https://pixabay.com/videos/id-31131/",
+          "tags": "light leak, lava lamp, light, lava, lamp, lighting, psychedelic, flow, liquid",
+          "duration": 39,
+          "url": "https://cdn.pixabay.com/video/2020/01/10/31131-384523209_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2020/01/10/31131-384523209_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2020/01/10/31131-384523209_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 269616,
+          "page": "https://pixabay.com/videos/id-269616/",
+          "tags": "ai generated, lava, volcano, eruption, seismic, fire, hot, flow, molten, glow, geology, landscape, nature, destruction, magma, night, heat, danger",
+          "duration": 20,
+          "url": "https://cdn.pixabay.com/video/2025/04/03/269616_large.mp4",
+          "width": 3840,
+          "height": 2160,
+          "preview": "https://cdn.pixabay.com/video/2025/04/03/269616_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2025/04/03/269616_large.jpg"
+        },
+        {
+          "source": "pixabay",
+          "id": 190300,
+          "page": "https://pixabay.com/videos/id-190300/",
+          "tags": "ai generated, lava, fluid, glossy, oily, copper, abstract, hypnotic, motion, textured, warp, flowing, artistic, reflective",
+          "duration": 8,
+          "url": "https://cdn.pixabay.com/video/2023/11/22/190300-887495743_large.mp4",
+          "width": 1944,
+          "height": 1080,
+          "preview": "https://cdn.pixabay.com/video/2023/11/22/190300-887495743_tiny.mp4",
+          "thumb": "https://cdn.pixabay.com/video/2023/11/22/190300-887495743_large.jpg"
+        }
+      ]
+    }
+  }
+}
